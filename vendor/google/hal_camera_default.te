@@ -24,6 +24,10 @@ binder_call(hal_camera_default, rlsservice)
 hal_client_domain(hal_camera_default, hal_graphics_composer)
 allow hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
 
+#For camera hal to talk with ECOService.
+allow hal_camera_default eco_service:service_manager find;
+binder_call(hal_camera_default, mediacodec)
+
 # For camera hal to communicate with with power HAL
 hal_client_domain(hal_camera_default, hal_power)
 
