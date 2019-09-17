@@ -69,3 +69,6 @@ persist.vendor.mdm.                             u:object_r:vendor_modem_prop:s0
 
 # ramoops
 vendor.ramoops.                                 u:object_r:vendor_ramoops_prop:s0
+
+# FP HAL kpi
+vendor.fpc_kpi                                  u:object_r:vendor_default_prop:s0
