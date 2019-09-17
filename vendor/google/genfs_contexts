@@ -163,3 +163,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 
 # Bootloader
 genfscon proc /bldrlog                                u:object_r:proc_bldrlog:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fp_fpc1020                               u:object_r:sysfs_fingerprint:s0
