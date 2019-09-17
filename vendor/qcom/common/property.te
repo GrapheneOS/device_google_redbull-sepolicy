@@ -57,8 +57,6 @@ type vendor_bluetooth_prop, property_type;
 type ctl_vendor_hbtp_prop, property_type;
 type ctl_vendor_mmid_prop, property_type;
 type vendor_qdma_prop, property_type;
-type wfd_service_prop, property_type;
-type wfd_debug_prop, property_type;
 type ctl_vendor_imsrcsservice_prop, property_type;
 type vendor_mmi_prop, property_type;
 type vendor_time_service_prop, property_type;

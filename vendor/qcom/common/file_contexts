@@ -62,7 +62,6 @@
 /(vendor|system/vendor)/bin/test_diag           u:object_r:diag_exec:s0
 /(vendor|system/vendor)/bin/thermal-engine      u:object_r:thermal-engine_exec:s0
 /(vendor|system/vendor)/bin/vm_bms                              u:object_r:vm_bms_exec:s0
-/(vendor|system/vendor)/bin/wfdhdcphalservice                                      u:object_r:wfdhdcphalservice_qti_exec:s0
 /(vendor|system/vendor)/bin/mm-qcamera-daemon   u:object_r:mm-qcamerad_exec:s0
 /(vendor|system/vendor)/bin/qfp-daemon          u:object_r:qfp-daemon_exec:s0
 /(vendor|system/vendor)/bin/qvop-daemon         u:object_r:qvop-daemon_exec:s0
@@ -127,7 +126,6 @@
 /(vendor|system/vendor)/bin/hbtp_daemon         u:object_r:hbtp_exec:s0
 /(vendor|system/vendor)/bin/touch_fusion        u:object_r:touchfusion_exec:s0
 /(vendor|system/vendor)/bin/seemp_healthd       u:object_r:seemp_health_daemon_exec:s0
-/(vendor|system/vendor)/bin/wifidisplayhalservice               u:object_r:wifidisplayhalservice_qti_exec:s0
 /(vendor|system/vendor)/bin/usf_epos            u:object_r:usf_exec:s0
 /(vendor|system/vendor)/bin/usf_gesture         u:object_r:usf_exec:s0
 /(vendor|system/vendor)/bin/usf_hovering        u:object_r:usf_exec:s0
