@@ -1,0 +1,14 @@
+allow tee self:capability { chown setgid setuid };
+
+allow tee device:dir r_dir_perms;
+
+set_prop(tee, vendor_tee_listener_prop)
+vndbinder_use(tee)
+allow tee block_device:dir r_dir_perms;
+allow tee ssd_block_device:blk_file rw_file_perms;
+allow tee sg_device:chr_file { rw_file_perms setattr };
+
+allow tee mnt_vendor_file:dir search;
+allow tee persist_file:dir search;
+allow tee persist_file:lnk_file read;
+allow tee persist_drm_file:dir r_dir_perms;
