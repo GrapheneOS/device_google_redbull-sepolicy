@@ -1,3 +1,13 @@
 type citadeld, domain;
 type citadeld_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(citadeld)
+
+vndbinder_use(citadeld)
+
+allow citadeld citadel_device:chr_file rw_file_perms;
+allow citadeld debugfs_ipc:dir search;
+
+binder_call(citadeld, hal_power_stats_default)
+hwbinder_use(citadeld)
+get_prop(citadeld, hwservicemanager_prop)
+
