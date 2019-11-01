@@ -1,3 +1,12 @@
 type hal_gnss_qti, domain;
+hal_server_domain(hal_gnss_qti, hal_gnss)
+
 type hal_gnss_qti_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_gnss_qti)
+vndbinder_use(hal_gnss_qti)
+
+r_dir_file(hal_gnss_qti, sysfs_msm_subsys)
+
+binder_call(hal_gnss_qti, vendor_per_mgr)
+
+allow hal_gnss_qti self:qipcrtr_socket create_socket_perms_no_ioctl;
