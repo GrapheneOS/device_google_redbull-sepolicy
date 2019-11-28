@@ -1,1 +1,6 @@
+# SSRestartDetector app
 type ssr_detector_app, domain;
+
+app_domain(ssr_detector_app)
+
+allow ssr_detector_app app_api_service:service_manager find;
