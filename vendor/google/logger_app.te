@@ -1,1 +1,7 @@
 type logger_app, domain;
+
+userdebug_or_eng(`
+  app_domain(logger_app)
+
+  allow logger_app app_api_service:service_manager find;
+')

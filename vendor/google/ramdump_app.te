@@ -1,1 +1,7 @@
 type ramdump_app, domain;
+
+userdebug_or_eng(`
+  app_domain(ramdump_app)
+
+  allow ramdump_app app_api_service:service_manager find;
+')
