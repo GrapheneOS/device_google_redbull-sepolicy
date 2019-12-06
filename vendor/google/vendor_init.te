@@ -6,3 +6,7 @@ allow vendor_init ipa_dev:chr_file w_file_perms;
 
 get_prop(vendor_init, public_vendor_default_prop)
 set_prop(vendor_init, vendor_thermal_prop)
+
+userdebug_or_eng(`
+  set_prop(vendor_init, logpersistd_logging_prop)
+')
