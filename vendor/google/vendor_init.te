@@ -9,6 +9,11 @@ set_prop(vendor_init, vendor_build_type_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 set_prop(vendor_init, vendor_thermal_prop)
 
+#radio related
+set_prop(vendor_init, cnd_vendor_prop)
+set_prop(vendor_init, vendor_modem_diag_prop)
+set_prop(vendor_init, vendor_radio_prop)
+
 userdebug_or_eng(`
   set_prop(vendor_init, logpersistd_logging_prop)
 ')
