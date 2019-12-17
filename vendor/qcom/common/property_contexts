@@ -52,6 +52,7 @@ vendor.debug.egl.profiler                       u:object_r:vendor_display_prop:s
 vendor.debug.prerotation.disable                u:object_r:vendor_display_prop:s0
 vendor.debug.egl.swapinterval                   u:object_r:vendor_display_prop:s0
 ro.vendor.graphics.memory                       u:object_r:vendor_display_prop:s0
+vendor.debug.rs.                                u:object_r:vendor_display_prop:s0
 
 vendor.debug.ramdump.                           u:object_r:vendor_ramdump_prop:s0
 vendor.ims.                                     u:object_r:qcom_ims_prop:s0
