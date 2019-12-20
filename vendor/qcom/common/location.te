@@ -8,8 +8,8 @@ r_dir_file(location, sysfs_ssr)
 
 allow location hal_gnss_qti:unix_dgram_socket sendto;
 
-allow location location_data_file:dir rw_dir_perms;
-allow location location_data_file:file rw_file_perms;
+allow location location_data_file:dir create_dir_perms;
+allow location location_data_file:file create_file_perms;
 allow location location_exec:file execute_no_trans;
 allow location location_socket:dir w_dir_perms;
 allow location location_socket:sock_file create_file_perms;
