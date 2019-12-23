@@ -6,3 +6,16 @@ init_daemon_domain(hal_wifi_ext)
 
 # Allow to start the IWifi:wifi_ext service
 add_hwservice(hal_wifi_ext, hal_wifi_ext_hwservice);
+
+# Allow wifi hal access to LOWI
+allow hal_wifi_ext location:unix_stream_socket connectto;
+
+# write to files owned by location daemon
+allow hal_wifi_ext location_socket:dir search;
+allow hal_wifi_ext location_socket:sock_file write;
+
+# Write wlan driver/fw version into property
+set_prop(hal_wifi_ext, vendor_wifi_version)
+
+# allow hal_wifi to write into /proc/debugdriver/driverdump
+r_dir_file(hal_wifi_ext, proc_wifi_dbg)
