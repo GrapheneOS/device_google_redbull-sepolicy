@@ -19,4 +19,6 @@ set_prop(vendor_init, vendor_radio_prop)
 
 userdebug_or_eng(`
   set_prop(vendor_init, logpersistd_logging_prop)
+  # Allow vendor_init to write vendor_tcpdump_log_prop on userdebug or eng ROM
+  set_prop(vendor_init, vendor_tcpdump_log_prop)
 ')
