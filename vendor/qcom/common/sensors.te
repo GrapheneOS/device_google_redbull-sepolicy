@@ -15,3 +15,6 @@ allow sensors self:qipcrtr_socket create;
 userdebug_or_eng(`
   allow sensors diag_device:chr_file rw_file_perms;
 ')
+
+# Allow to getprop persist.vendor.sys.modem.diag.mdlog
+get_prop(sensors, vendor_modem_diag_prop)
