@@ -66,6 +66,7 @@ ro.vendor.aware_available                       u:object_r:vendor_aware_availabl
 
 persist.vendor.modem.                           u:object_r:vendor_modem_prop:s0
 persist.vendor.mdm.                             u:object_r:vendor_modem_prop:s0
+vendor.modem.                                   u:object_r:vendor_modem_prop:s0
 
 # ramoops
 vendor.ramoops.                                 u:object_r:vendor_ramoops_prop:s0
