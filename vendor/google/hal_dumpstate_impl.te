@@ -20,3 +20,12 @@ userdebug_or_eng(`
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
 ')
 dontaudit hal_dumpstate_impl debugfs_ipa:file r_file_perms;
+
+allow hal_dumpstate_impl debugfs_tzdbg:file r_file_perms;
+allow hal_dumpstate_impl debugfs_tzdbg:dir r_dir_perms;
+
+# Access to Citadel is via citadeld
+vndbinder_use(hal_dumpstate_impl)
+binder_call(hal_dumpstate_impl, citadeld)
+allow hal_dumpstate_impl citadeld_service:service_manager find;
+allow hal_dumpstate_impl citadel_updater_exec:file execute_no_trans;
