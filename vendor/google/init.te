@@ -3,3 +3,5 @@ allow init firmware_file:dir mounton;
 allow init firmware_file:filesystem { getattr mount relabelfrom };
 
 allow init tmpfs:lnk_file create;
+
+allow init sysfs_scsi_devices_0000:file w_file_perms;
