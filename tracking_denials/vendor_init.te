@@ -1,0 +1,14 @@
+# b/145484387
+dontaudit vendor_init camera_prop:property_service set;
+
+# b/145485380
+dontaudit vendor_init debugfs:file write;
+
+# b/145485815
+dontaudit vendor_init default_prop:property_service set;
+
+# b/146848308
+dontaudit vendor_init proc_swappiness:file write;
+
+# b/145488847
+dontaudit vendor_init system_prop:property_service set;

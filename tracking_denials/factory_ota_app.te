@@ -1,0 +1,3 @@
+# b/144344124
+dontaudit factory_ota_app factory_ota_prop:file { getattr map open read };
+dontaudit factory_ota_app gpuservice:binder call;
