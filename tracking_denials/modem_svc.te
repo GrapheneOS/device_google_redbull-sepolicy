@@ -1,0 +1,10 @@
+# b/146415953
+dontaudit modem_svc exported3_radio_prop:file { getattr map open read };
+dontaudit modem_svc init:unix_stream_socket connectto;
+dontaudit modem_svc property_socket:sock_file write;
+dontaudit modem_svc self:qipcrtr_socket { create getattr read write };
+dontaudit modem_svc sysfs_msm_subsys:dir { open read search };
+dontaudit modem_svc sysfs_ssr:file { open read };
+dontaudit modem_svc vendor_build_type_prop:file { getattr map open read };
+dontaudit modem_svc vendor_modem_diag_prop:file { getattr map open read };
+dontaudit modem_svc vendor_modem_prop:property_service set;

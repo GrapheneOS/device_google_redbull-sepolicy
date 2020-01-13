@@ -1,0 +1,2 @@
+# b/146477044
+dontaudit kernel unencrypted_data_file:file read;
