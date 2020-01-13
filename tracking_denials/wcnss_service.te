@@ -1,0 +1,3 @@
+# b/145579994
+dontaudit wcnss_service vendor_data_file:file { getattr open read };
+dontaudit wcnss_service vendor_per_mgr_service:service_manager find;

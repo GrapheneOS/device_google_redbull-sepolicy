@@ -1,0 +1,3 @@
+# b/145735459
+dontaudit ramdump_app system_boot_reason_prop:file { getattr map open read };
+dontaudit ramdump_app vendor_ramdump_prop:file { getattr map open read };

@@ -5,4 +5,4 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/redbull-sepolicy/private
 BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/google
 BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/qcom/common
 BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/qcom/sm7250
-
+BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/tracking_denials

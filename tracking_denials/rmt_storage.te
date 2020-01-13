@@ -1,0 +1,13 @@
+# b/145580083
+dontaudit rmt_storage block_device:dir search;
+dontaudit rmt_storage kmsg_device:chr_file { open write };
+dontaudit rmt_storage modem_block_device:blk_file { open read write };
+dontaudit rmt_storage self:capability2 block_suspend;
+dontaudit rmt_storage self:capability dac_override;
+dontaudit rmt_storage self:qipcrtr_socket { create getattr read write };
+dontaudit rmt_storage sysfs_rmtfs:dir search;
+dontaudit rmt_storage sysfs_rmtfs:file { getattr open read };
+dontaudit rmt_storage sysfs_uio:dir { open read search };
+dontaudit rmt_storage sysfs_wake_lock:file { append open };
+dontaudit rmt_storage uio_device:chr_file { map open read write };
+dontaudit rmt_storage vendor_modem_prop:file { getattr map open read };

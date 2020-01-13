@@ -1,0 +1,4 @@
+# b/146477826
+dontaudit ssr_detector_app cgroup:file write;
+dontaudit ssr_detector_app ramdump_vendor_data_file:dir read;
+dontaudit ssr_detector_app system_app_data_file:dir { getattr search };
