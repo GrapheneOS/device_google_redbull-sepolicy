@@ -1,0 +1,2 @@
+# b/145579144
+dontaudit proc_net proc:filesystem associate;
