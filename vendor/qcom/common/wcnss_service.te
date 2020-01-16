@@ -21,6 +21,7 @@ userdebug_or_eng(`
 
 # For Peripheral Manager in cnss-daemon
 binder_call(wcnss_service, vendor_per_mgr)
+allow wcnss_service vendor_per_mgr_service:service_manager find;
 
 # files in /sys
 r_dir_file(wcnss_service, sysfs_msm_subsys)
