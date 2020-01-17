@@ -1,5 +1,2 @@
-# b/143850724
-dontaudit hwservicemanager netmgrd:binder { call transfer };
-
 # b/145577493
 dontaudit hwservicemanager pixelstats_vendor:binder transfer;
