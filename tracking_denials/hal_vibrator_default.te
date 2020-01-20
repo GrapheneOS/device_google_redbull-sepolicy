@@ -1,6 +1,2 @@
 # b/145570952
-dontaudit hal_vibrator_default mnt_vendor_file:dir search;
-dontaudit hal_vibrator_default persist_file:dir search;
-dontaudit hal_vibrator_default persist_haptics_file:dir search;
 dontaudit hal_vibrator_default sysfs:file { getattr open read write };
-dontaudit hal_vibrator_default sysfs_leds:dir search;

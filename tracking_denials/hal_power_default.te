@@ -1,2 +1,0 @@
-# b/145504106
-dontaudit hal_power_default sysfs:file { open write };
