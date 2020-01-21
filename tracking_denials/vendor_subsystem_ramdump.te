@@ -1,3 +1,0 @@
-# b/145578733
-dontaudit vendor_subsystem_ramdump device:dir { open read };
-dontaudit vendor_subsystem_ramdump ramdump_device:chr_file { open read };
