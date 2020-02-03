@@ -7,6 +7,7 @@ wakelock_use(rmt_storage)
 r_dir_file(rmt_storage, sysfs_uio)
 
 set_prop(rmt_storage, vendor_modem_prop)
+get_prop(rmt_storage, exported3_radio_prop)
 
 allow rmt_storage kmsg_device:chr_file w_file_perms;
 allow rmt_storage modem_block_device:blk_file rw_file_perms;
