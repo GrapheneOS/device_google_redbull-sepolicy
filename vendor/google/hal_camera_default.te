@@ -1,1 +1,5 @@
 get_prop(hal_camera_default, vendor_display_prop)
+
+# For camera hal to talk with rlsservice
+allow hal_camera_default rls_service:service_manager find;
+binder_call(hal_camera_default, rlsservice)
