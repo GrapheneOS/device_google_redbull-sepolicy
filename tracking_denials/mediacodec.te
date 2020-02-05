@@ -1,2 +1,0 @@
-# b/146327564
-dontaudit mediacodec hal_capabilityconfigstore_qti_hwservice:hwservice_manager find;
