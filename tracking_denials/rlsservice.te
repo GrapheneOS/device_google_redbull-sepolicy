@@ -1,9 +1,0 @@
-# b/145578931
-dontaudit rlsservice rls_device:chr_file { ioctl open read write };
-dontaudit rlsservice rls_service:service_manager add;
-dontaudit rlsservice sysfs_leds:dir search;
-dontaudit rlsservice sysfs_leds:file { open read };
-dontaudit rlsservice sysfs_msm_subsys:dir search;
-dontaudit rlsservice sysfs_msm_subsys:file { open read };
-dontaudit rlsservice vndbinder_device:chr_file { ioctl map open read write };
-dontaudit rlsservice vndservicemanager:binder { call transfer };
