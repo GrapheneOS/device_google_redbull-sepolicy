@@ -5,7 +5,7 @@ dontaudit pixelstats_vendor fwk_stats_hwservice:hwservice_manager find;
 dontaudit pixelstats_vendor hwservicemanager:binder call;
 dontaudit pixelstats_vendor hwservicemanager_prop:file { getattr map open read };
 dontaudit pixelstats_vendor self:netlink_kobject_uevent_socket { bind create getopt read setopt };
-dontaudit pixelstats_vendor statsd:binder call;
+dontaudit pixelstats_vendor stats_service_server:binder call;
 dontaudit pixelstats_vendor sysfs_batteryinfo:dir search;
 dontaudit pixelstats_vendor sysfs_batteryinfo:file { getattr open read };
 dontaudit pixelstats_vendor sysfs_scsi_devices_0000:file { getattr open read write };
