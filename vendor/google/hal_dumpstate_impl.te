@@ -21,6 +21,7 @@ userdebug_or_eng(`
 
 # Access to modem files
 userdebug_or_eng(`
+  allow hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
   allow hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
   allow hal_dumpstate_impl ssr_log_file:dir search;
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
@@ -35,3 +36,7 @@ vndbinder_use(hal_dumpstate_impl)
 binder_call(hal_dumpstate_impl, citadeld)
 allow hal_dumpstate_impl citadeld_service:service_manager find;
 allow hal_dumpstate_impl citadel_updater_exec:file execute_no_trans;
+
+dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
+dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
+dontaudit hal_dumpstate_impl vendor_tcpdump_log_prop:file r_file_perms;
