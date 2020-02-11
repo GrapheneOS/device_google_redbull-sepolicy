@@ -1,1 +1,4 @@
 get_prop(hal_sensors_default, vendor_display_prop)
+
+allow hal_sensors_default sysfs_leds:dir search;
+allow hal_sensors_default sysfs_leds:file r_file_perms;
