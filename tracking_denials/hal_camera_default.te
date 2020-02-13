@@ -63,7 +63,7 @@ dontaudit hal_camera_default exported_overlay_prop:file { getattr map open };
 dontaudit hal_camera_default exported_pm_prop:file { getattr map open };
 dontaudit hal_camera_default exported_system_radio_prop:file { getattr map open };
 dontaudit hal_camera_default exported_wifi_prop:file { getattr map open };
-dontaudit hal_camera_default factory_ota_prop:file { getattr map open };
+dontaudit hal_camera_default sota_prop:file { getattr map open };
 dontaudit hal_camera_default ffs_prop:file { getattr map open };
 dontaudit hal_camera_default fingerprint_prop:file { getattr map open };
 dontaudit hal_camera_default firstboot_prop:file { getattr map open };
