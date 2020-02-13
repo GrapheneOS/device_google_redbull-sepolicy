@@ -14,6 +14,7 @@ set_prop(vendor_init, vendor_hvdcp_opti_prop)
 set_prop(vendor_init, vendor_audio_prop)
 set_prop(vendor_init, vendor_bluetooth_prop)
 set_prop(vendor_init, power_prop)
+set_prop(vendor_init, camera_prop)
 
 #radio related
 set_prop(vendor_init, cnd_vendor_prop)
