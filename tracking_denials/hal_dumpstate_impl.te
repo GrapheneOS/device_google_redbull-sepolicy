@@ -19,9 +19,6 @@ dontaudit hal_dumpstate_impl vendor_radio_prop:file { getattr map open read };
 # b/149467590
 dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir search;
 
-# b/149468140
-dontaudit hal_dumpstate_impl debugfs_usb:file { open read };
-
 # b/149468397
 dontaudit hal_dumpstate_impl sysfs_power_stats:file { open read };
 
