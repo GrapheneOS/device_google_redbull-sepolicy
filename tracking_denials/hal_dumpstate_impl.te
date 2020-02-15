@@ -19,14 +19,6 @@ dontaudit hal_dumpstate_impl vendor_radio_prop:file { getattr map open read };
 # b/149467590
 dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir search;
 
-# b/149467596
-dontaudit hal_dumpstate_impl debugfs_batteryinfo:dir { open read search };
-dontaudit hal_dumpstate_impl debugfs_batteryinfo:file { getattr open read };
-dontaudit hal_dumpstate_impl debugfs_pmic:dir { open read search };
-dontaudit hal_dumpstate_impl debugfs_pmic:file { getattr open read };
-dontaudit hal_dumpstate_impl sysfs_batteryinfo:dir search;
-dontaudit hal_dumpstate_impl sysfs_batteryinfo:file { getattr open read };
-
 # b/149468140
 dontaudit hal_dumpstate_impl debugfs_usb:file { open read };
 
