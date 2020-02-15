@@ -23,6 +23,9 @@ userdebug_or_eng(`
   allow hal_dumpstate_impl debugfs_pmic:file rw_file_perms;
 ')
 
+# dump usb files
+allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
+
 # dump power supply stats
 allow hal_dumpstate_impl sysfs_batteryinfo:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
