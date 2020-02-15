@@ -92,7 +92,6 @@ genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:     
 genfscon sysfs /class/qcom-battery                                              u:object_r:sysfs_batteryinfo:s0
 genfscon debugfs /logbuffer/ssoc                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/ttf                                                 u:object_r:debugfs_batteryinfo:s0
-genfscon debugfs /logbuffer/batt_ce                                             u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /logbuffer/wireless                                            u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /google_charger                                                u:object_r:debugfs_batteryinfo:s0
 genfscon debugfs /google_battery                                                u:object_r:debugfs_batteryinfo:s0
