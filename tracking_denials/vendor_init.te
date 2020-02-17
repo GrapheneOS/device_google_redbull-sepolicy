@@ -1,6 +1,3 @@
-# b/149382719
-dontaudit vendor_init debugfs:file write;
-
 # b/145485815
 dontaudit vendor_init default_prop:property_service set;
 
