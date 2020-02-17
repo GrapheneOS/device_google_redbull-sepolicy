@@ -1,3 +1,0 @@
-# b/145580323
-dontaudit vold public_vendor_default_prop:file { getattr map open read };
-dontaudit vold sysfs_scsi_devices_0000:file write;

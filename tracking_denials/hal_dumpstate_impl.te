@@ -45,11 +45,3 @@ dontaudit hal_dumpstate_impl sysfs_esim:file { open read };
 dontaudit hal_dumpstate_impl vendor_file:file execute_no_trans;
 dontaudit hal_dumpstate_impl vendor_shell_exec:file execute_no_trans;
 dontaudit hal_dumpstate_impl vendor_toolbox_exec:file execute_no_trans;
-
-# b/149468879
-dontaudit hal_dumpstate_impl debugfs_f2fs:dir search;
-dontaudit hal_dumpstate_impl debugfs_f2fs:file { open read };
-dontaudit hal_dumpstate_impl proc_f2fs:dir { open read search };
-dontaudit hal_dumpstate_impl proc_f2fs:file { open read };
-dontaudit hal_dumpstate_impl sysfs_scsi_devices_0000:dir { open read search };
-dontaudit hal_dumpstate_impl sysfs_scsi_devices_0000:file { getattr open read };
