@@ -23,3 +23,6 @@ vndbinder_use(hal_audio);
 
 # For audio properties
 get_prop(hal_audio_default, vendor_audio_prop);
+
+# For audio hal to talk with rainbow sensor
+allow hal_audio_default rls_device:chr_file rw_file_perms;
