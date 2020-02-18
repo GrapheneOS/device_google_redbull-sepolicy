@@ -64,3 +64,6 @@ allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 dontaudit hal_dumpstate_impl vendor_tcpdump_log_prop:file r_file_perms;
+
+# Access to vendor logging property
+set_prop(hal_dumpstate_impl, vendor_logging_prop)

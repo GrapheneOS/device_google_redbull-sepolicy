@@ -8,3 +8,6 @@ type camera_ro_prop, property_type;
 type vendor_ramoops_prop, property_type;
 type ecoservice_prop, property_type;
 type vendor_shutdown_prop, property_type;
+
+# vendor verbose logging property
+type vendor_logging_prop, property_type;
