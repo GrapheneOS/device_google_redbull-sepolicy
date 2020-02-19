@@ -147,6 +147,9 @@ genfscon sysfs /devices/platform/soc/soc:fp_fpc1020                             
 # Dumpstats IPA statistics
 genfscon debugfs /ipa/ipa_statistics_msg                  u:object_r:debugfs_ipa:s0
 
+# IPA Data Stall Detection
+genfscon debugfs /ipawwan/debug                         u:object_r:debugfs_ipa_data_stall_detection:s0
+
 # IMEI/MEID
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/imei1                  u:object_r:sysfs_imei:s0
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/imei2                  u:object_r:sysfs_imei:s0
