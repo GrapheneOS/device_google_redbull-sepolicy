@@ -4,6 +4,8 @@ dontaudit hal_dumpstate_impl display_vendor_data_file:dir search;
 # b/149467108
 dontaudit hal_dumpstate_impl sysfs_thermal:dir { open read search };
 dontaudit hal_dumpstate_impl sysfs_thermal:file { open read };
+dontaudit hal_dumpstate_impl sysfs:dir { open read };
+dontaudit hal_dumpstate_impl sysfs:file { getattr open read };
 
 # b/149467590
 dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir search;
@@ -11,14 +13,7 @@ dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir search;
 # b/149468579
 dontaudit hal_dumpstate_impl debugfs_tracing_instances:dir search;
 
-# b/149468881
-dontaudit hal_dumpstate_impl block_device:dir { getattr open read search };
-dontaudit hal_dumpstate_impl debugfs_dma_buf:file { open read };
-dontaudit hal_dumpstate_impl debugfs_ion:dir { open read search };
-dontaudit hal_dumpstate_impl debugfs_ion:file getattr;
+# b/149468879
 dontaudit hal_dumpstate_impl proc:file { open read };
-dontaudit hal_dumpstate_impl shell_data_file:file getattr;
 dontaudit hal_dumpstate_impl sysfs:dir { open read };
 dontaudit hal_dumpstate_impl sysfs:file { getattr open read };
-dontaudit hal_dumpstate_impl sysfs_esim:file { open read };
-dontaudit hal_dumpstate_impl vendor_file:file execute_no_trans;

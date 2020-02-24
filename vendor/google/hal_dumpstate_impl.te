@@ -3,6 +3,9 @@ type hal_dumpstate_impl_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(hal_dumpstate_impl)
 hal_server_domain(hal_dumpstate_impl, hal_dumpstate)
 
+# Allow to write dumpstate_board.txt
+allow hal_dumpstate_impl shell_data_file:file getattr;
+
 # Execute dump scripts from vendor partition
 allow hal_dumpstate_impl vendor_shell_exec:file rx_file_perms;
 allow hal_dumpstate_impl vendor_toolbox_exec:file rx_file_perms;
@@ -17,6 +20,13 @@ dontaudit hal_dumpstate_impl proc_bldrlog:file r_file_perms;
 allow hal_dumpstate_impl sysfs_touch:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_touch:file rw_file_perms;
 allow hal_dumpstate_impl proc_touch:file rw_file_perms;
+
+# For dma_buf/ion dump
+allow hal_dumpstate_impl debugfs_dma_buf:file r_file_perms;
+r_dir_file(hal_dumpstate_impl, debugfs_ion)
+
+# Access /dev/block/mapper/
+allow hal_dumpstate_impl block_device:dir r_dir_perms;
 
 # dump Battery/Charger/Guage
 allow hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
@@ -102,3 +112,6 @@ allow hal_dumpstate_impl debugfs_wlan:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_wlan:file r_file_perms;
 allow hal_dumpstate_impl sysfs_msm_wlan:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_power_stats:file r_file_perms;
+
+# Allow to access eSIM status
+allow hal_dumpstate_impl sysfs_esim:file r_file_perms;
