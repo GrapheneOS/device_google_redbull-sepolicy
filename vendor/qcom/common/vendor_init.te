@@ -3,3 +3,4 @@ userdebug_or_eng(`
   allow vendor_init proc_sysrq:file w_file_perms;
 ')
 
+set_prop(vendor_init, factory_ota_prop)
