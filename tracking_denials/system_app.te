@@ -1,3 +1,6 @@
 # b/147201102
 dontaudit system_app hal_tui_comm_hwservice:hwservice_manager find;
 dontaudit system_app hal_tui_comm_qti:binder { call transfer };
+
+# b/150279745
+dontaudit system_app diag_device:chr_file { ioctl open read write };
