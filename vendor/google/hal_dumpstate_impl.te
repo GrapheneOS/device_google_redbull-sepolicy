@@ -95,6 +95,8 @@ allow hal_dumpstate_impl proc_f2fs:dir r_dir_perms;
 allow hal_dumpstate_impl proc_f2fs:file r_file_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:dir r_dir_perms;
 allow hal_dumpstate_impl sysfs_scsi_devices_0000:file r_file_perms;
+allow hal_dumpstate_impl proc_scsi:dir r_dir_perms;
+allow hal_dumpstate_impl proc_scsi:file r_file_perms;
 
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
