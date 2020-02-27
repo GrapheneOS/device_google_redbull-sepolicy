@@ -1,3 +1,2 @@
 # b/143464645
-dontaudit tee persist_drm_file:file { open read };
 dontaudit tee sysfs_wake_lock:file append;
