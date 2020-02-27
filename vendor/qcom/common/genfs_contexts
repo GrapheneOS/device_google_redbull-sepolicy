@@ -25,4 +25,3 @@ genfscon sysfs /module/diagchar/parameters/timestamp_switch                     
 genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws@1e08000                                                                          u:object_r:sysfs_data:s0
 genfscon sysfs /devices/virtual/xt_hardidletimer/timers                                                                                u:object_r:sysfs_data:s0
 genfscon sysfs /devices/virtual/xt_idletimer/timers                                                                                    u:object_r:sysfs_data:s0
-genfscon sysfs /devices/platform/vim2m.0/video4linux/video[0-33]/name                                                                  u:object_r:sysfs_graphics:s0
