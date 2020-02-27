@@ -1,0 +1,6 @@
+# b/150280132
+dontaudit shell adbd_prop:file { getattr map open };
+dontaudit shell apexd_prop:file { getattr map open };
+dontaudit shell apk_verity_prop:file { getattr map open };
+dontaudit shell bluetooth_a2dp_offload_prop:file { getattr map open };
+dontaudit shell bluetooth_audio_hal_prop:file { getattr open };
