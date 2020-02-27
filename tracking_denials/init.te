@@ -3,6 +3,3 @@ dontaudit init kernel:system module_request;
 
 # b/146920963
 dontaudit init socket_device:sock_file { create setattr };
-
-# b/147078676
-dontaudit init sysfs:file { open setattr write };
