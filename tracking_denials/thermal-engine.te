@@ -1,6 +1,8 @@
 # b/145578895
 dontaudit thermal-engine self:netlink_kobject_uevent_socket { bind create getopt read setopt };
 dontaudit thermal-engine self:qipcrtr_socket { create getattr read setopt write };
+dontaudit thermal-engine socket_device:dir { add_name write };
+dontaudit thermal-engine socket_device:sock_file { create setattr };
 dontaudit thermal-engine sysfs_batteryinfo:dir search;
 dontaudit thermal-engine sysfs:dir { open read };
 dontaudit thermal-engine sysfs_leds:dir search;

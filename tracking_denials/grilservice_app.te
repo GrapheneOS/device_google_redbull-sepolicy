@@ -1,0 +1,3 @@
+# b/150278173
+dontaudit grilservice_app hal_wifi_ext:binder { call transfer };
+dontaudit grilservice_app hal_wifi_ext_hwservice:hwservice_manager find;
