@@ -1,1 +1,2 @@
 get_prop(mediacodec, vendor_display_prop)
+allow mediacodec hal_capabilityconfigstore_qti_hwservice:hwservice_manager find;

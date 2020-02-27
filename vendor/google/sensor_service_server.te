@@ -1,0 +1,1 @@
+binder_call(sensor_service_server, hal_camera_default)

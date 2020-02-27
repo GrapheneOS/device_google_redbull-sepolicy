@@ -1,9 +1,3 @@
-# b/145484387
-dontaudit vendor_init camera_prop:property_service set;
-
-# b/145485380
-dontaudit vendor_init debugfs:file write;
-
 # b/145485815
 dontaudit vendor_init default_prop:property_service set;
 
