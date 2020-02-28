@@ -1,0 +1,2 @@
+# b/150279924
+dontaudit vendor_modprobe proc_cmdline:file { getattr open read };
