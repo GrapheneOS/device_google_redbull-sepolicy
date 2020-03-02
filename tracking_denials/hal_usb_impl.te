@@ -1,2 +1,0 @@
-# b/143468397
-dontaudit hal_usb_impl sysfs_batteryinfo:dir search;
