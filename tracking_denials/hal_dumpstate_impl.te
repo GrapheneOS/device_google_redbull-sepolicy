@@ -7,8 +7,5 @@ dontaudit hal_dumpstate_impl sysfs_thermal:file { open read };
 dontaudit hal_dumpstate_impl sysfs:dir { open read };
 dontaudit hal_dumpstate_impl sysfs:file { getattr open read };
 
-# b/149467590
-dontaudit hal_dumpstate_impl sensors_vendor_data_file:dir search;
-
 # b/149468579
 dontaudit hal_dumpstate_impl debugfs_tracing_instances:dir search;
