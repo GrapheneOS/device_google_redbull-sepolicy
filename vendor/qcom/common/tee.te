@@ -15,3 +15,5 @@ allow tee persist_drm_file:dir create_dir_perms;
 allow tee persist_drm_file:file create_file_perms;
 
 allow tee time_daemon:unix_stream_socket connectto;
+
+wakelock_use(tee);

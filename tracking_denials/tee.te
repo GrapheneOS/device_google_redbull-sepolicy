@@ -1,2 +1,0 @@
-# b/143464645
-dontaudit tee sysfs_wake_lock:file append;
