@@ -40,3 +40,9 @@ binder_call(hal_camera_default, sensor_service_server)
 
 # For camera hal to talk with GPU and dontaudit unnecessary files in /sys
 dontaudit hal_camera_default sysfs_msm_subsys:dir search;
+
+# For camera debugging
+userdebug_or_eng(`
+  allow hal_camera_default camera_vendor_data_file:dir create_dir_perms;
+  allow hal_camera_default camera_vendor_data_file:file create_file_perms;
+')
