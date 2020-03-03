@@ -7,6 +7,12 @@ add_service(rlsservice, rls_service)
 # access vd6281 rainbow sensor files
 allow rlsservice rls_device:chr_file rw_file_perms;
 
+# For rlsservice to use factory calibration data
+allow rlsservice mnt_vendor_file:dir search;
+allow rlsservice persist_file:dir search;
+allow rlsservice persist_camera_file:dir search;
+allow rlsservice persist_camera_file:file r_file_perms;
+
 allow rlsservice hal_camera_default:binder call;
 
 # For rlsservice to access display related sys file nodes
