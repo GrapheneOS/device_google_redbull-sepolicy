@@ -41,7 +41,7 @@ dontaudit flags_health_check exported_audio_prop:file { getattr map open };
 dontaudit flags_health_check exported_bluetooth_prop:file { getattr map open };
 dontaudit flags_health_check exported_overlay_prop:file { getattr map open };
 dontaudit flags_health_check exported_wifi_prop:file { getattr map open };
-dontaudit flags_health_check factory_ota_prop:file { getattr map open };
+dontaudit flags_health_check sota_prop:file { getattr map open };
 dontaudit flags_health_check firstboot_prop:file { getattr map open };
 dontaudit flags_health_check gsid_prop:file { getattr map open };
 dontaudit flags_health_check heapprofd_enabled_prop:file { getattr map open };
