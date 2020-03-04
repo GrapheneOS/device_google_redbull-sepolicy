@@ -57,6 +57,8 @@ userdebug_or_eng(`
   allow hal_dumpstate_impl ssr_log_file:file r_file_perms;
   allow hal_dumpstate_impl mpss_rfs_data_file:dir r_dir_perms;
   allow hal_dumpstate_impl mpss_rfs_data_file:file r_file_perms;
+  allow hal_dumpstate_impl netmgrd_data_file:dir r_dir_perms;
+  allow hal_dumpstate_impl netmgrd_data_file:file r_file_perms;
 
   set_prop(hal_dumpstate_impl, vendor_tcpdump_log_prop)
 ')
@@ -101,6 +103,8 @@ allow hal_dumpstate_impl proc_scsi:file r_file_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 dontaudit hal_dumpstate_impl vendor_tcpdump_log_prop:file r_file_perms;
+dontaudit hal_dumpstate_impl netmgrd_data_file:dir r_dir_perms;
+dontaudit hal_dumpstate_impl netmgrd_data_file:file r_file_perms;
 
 # Access to vendor logging property
 set_prop(hal_dumpstate_impl, vendor_logging_prop)
