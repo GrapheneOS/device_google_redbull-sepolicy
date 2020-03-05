@@ -7,11 +7,13 @@ hwbinder_use(hal_imsrtp)
 net_domain(hal_imsrtp)
 
 add_hwservice(hal_imsrtp, hal_imsrtp_hwservice)
+binder_call(hal_imsrtp, radio)
 unix_socket_connect(hal_imsrtp, ims, ims)
 
 get_prop(hal_imsrtp, hwservicemanager_prop)
 get_prop(hal_imsrtp, qcom_ims_prop)
 
+allow hal_imsrtp ion_device:chr_file r_file_perms;
 allow hal_imsrtp self:qipcrtr_socket create_socket_perms_no_ioctl;
 allow hal_imsrtp sysfs_ssr:file r_file_perms;
 allow hal_imsrtp sysfs_timestamp_switch:file r_file_perms;
