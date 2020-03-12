@@ -4,3 +4,4 @@ userdebug_or_eng(`
 ')
 
 set_prop(vendor_init, factory_ota_prop)
+set_prop(vendor_init, exported_system_prop)
