@@ -1,7 +1,9 @@
 allow hal_graphics_composer_default display_vendor_data_file:dir search;
-
+allow hal_graphics_composer_default fwk_sensor_hwservice:hwservice_manager find;
+binder_call(hal_graphics_composer, sensor_service_server)
 allow hal_graphics_composer_default mnt_vendor_file:dir search;
 allow hal_graphics_composer_default persist_file:dir search;
+allow hal_graphics_composer_default ion_device:chr_file rw_file_perms;
 r_dir_file(hal_graphics_composer_default, persist_display_file);
 
 allow hal_graphics_composer_default self:netlink_kobject_uevent_socket create_socket_perms_no_ioctl;
@@ -18,6 +20,8 @@ vndbinder_use(hal_graphics_composer_default)
 
 add_service(hal_graphics_composer_default, qdisplay_service)
 add_hwservice(hal_graphics_composer_default, hal_display_config_hwservice);
+
+dontaudit hal_graphics_composer_default sysfs_graphics_unused:file r_file_perms;
 
 userdebug_or_eng(`
   allow hal_graphics_composer_default diag_device:chr_file rw_file_perms;
