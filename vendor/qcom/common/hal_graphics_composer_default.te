@@ -28,3 +28,6 @@ allow hal_graphics_composer_default oemfs:dir search;
 # Allow r/w to data partition for writeback dumps
 allow hal_graphics_composer_default display_vendor_data_file:dir create_dir_perms;
 allow hal_graphics_composer_default display_vendor_data_file:file create_file_perms;
+
+#allow composer access hal_light
+hal_client_domain(hal_graphics_composer_default, hal_light);
