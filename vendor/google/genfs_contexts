@@ -16,8 +16,9 @@ genfscon proc /scsi                                   u:object_r:proc_scsi:s0
 genfscon sysfs /bus/iio/devices                       u:object_r:sysfs_iio_devices:s0
 
 # Touch
-genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0		u:object_r:sysfs_touch:s0
+genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0          u:object_r:sysfs_touch:s0
 genfscon proc  /fts/driver_test                                                 u:object_r:proc_touch:s0
+genfscon sysfs /devices/virtual/sec/tsp                                         u:object_r:sysfs_touch:s0
 
 # PowerHal
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp                      u:object_r:sysfs_msm_subsys:s0
