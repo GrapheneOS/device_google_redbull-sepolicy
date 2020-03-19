@@ -25,3 +25,6 @@ allow rlsservice sysfs_leds:file r_file_perms;
 allow rlsservice audio_device:dir search;
 allow rlsservice proc_asound:dir search;
 allow rlsservice proc_asound:file r_file_perms;
+
+# For rlsservice to access sensor
+binder_call(rlsservice, hal_sensors_default)

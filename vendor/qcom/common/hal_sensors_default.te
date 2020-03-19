@@ -30,3 +30,7 @@ allow hal_sensors_default qdsp_device:chr_file r_file_perms;
 # For Suez metrics collection
 allow hal_sensors_default fwk_stats_hwservice:hwservice_manager find;
 allow hal_sensors_default system_server:binder call;
+
+# For rear light
+allow hal_sensors_default rls_service:service_manager find;
+binder_call(hal_sensors_default, rlsservice)
