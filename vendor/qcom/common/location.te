@@ -2,6 +2,17 @@ type location, domain;
 type location_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(location)
 
+allow location hal_cacert_hwservice:hwservice_manager find;
+allow location hal_datafactory_hwservice:hwservice_manager find;
+allow location hal_cne_hwservice:hwservice_manager find;
+
+binder_call(location, qtidataservices_app)
+get_prop(location, hwservicemanager_prop)
+hwbinder_use(location)
+
+# Enable standard network access (for XTRA download)
+net_domain(location)
+
 r_dir_file(location, sysfs_msm_subsys)
 r_dir_file(location, sysfs_soc)
 r_dir_file(location, sysfs_ssr)
