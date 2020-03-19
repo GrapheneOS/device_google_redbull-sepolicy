@@ -8,6 +8,15 @@ allow sensors sensors_persist_file:file create_file_perms;
 allow sensors sensors_persist_file:fifo_file r_file_perms;
 allow sensors persist_file:dir search;
 
+# For sensor factory calibrated registry
+allow sensors sensors_persist_file:dir create;
+allow sensors persist_sensors_reg_fac_file:dir r_dir_perms;
+allow sensors persist_sensors_reg_fac_file:file { unlink r_file_perms };
+userdebug_or_eng(`
+  allow sensors persist_sensors_reg_fac_file:dir w_dir_perms;
+  allow sensors persist_sensors_reg_fac_file:file w_file_perms;
+')
+
 allow sensors mnt_vendor_file:dir search;
 
 allow sensors sysfs_soc:dir search;
