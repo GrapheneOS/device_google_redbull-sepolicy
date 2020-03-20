@@ -1,1 +1,5 @@
 type secure_ui_service_app, domain;
+
+app_domain(secure_ui_service_app);
+allow secure_ui_service_app thermal_service:service_manager find;
+
