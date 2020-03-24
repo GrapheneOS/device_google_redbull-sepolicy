@@ -1,3 +1,4 @@
 # To find and bind hal_wlc
 allow platform_app hal_wlc_hwservice:hwservice_manager find;
 binder_call(platform_app, hal_wlc)
+binder_call(hal_wlc, platform_app)
