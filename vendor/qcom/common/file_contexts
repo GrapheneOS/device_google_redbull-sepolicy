@@ -96,6 +96,7 @@
 /mnt/vendor/persist/bluetooth(/.*)?                                            u:object_r:persist_bluetooth_file:s0
 /mnt/vendor/persist/drm(/.*)?                                                  u:object_r:persist_drm_file:s0
 /mnt/vendor/persist/sensors(/.*)?                                              u:object_r:sensors_persist_file:s0
+/mnt/vendor/persist/sensors/registry/factory_data(/.*)?                        u:object_r:persist_sensors_reg_fac_file:s0
 /mnt/vendor/persist/alarm(/.*)?                                                u:object_r:persist_alarm_file:s0
 /mnt/vendor/persist/time(/.*)?                                                 u:object_r:persist_time_file:s0
 /mnt/vendor/persist/data(/.*)?                                                 u:object_r:persist_drm_file:s0
