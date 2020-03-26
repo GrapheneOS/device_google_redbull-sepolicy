@@ -17,3 +17,13 @@ allow tee persist_drm_file:file create_file_perms;
 allow tee time_daemon:unix_stream_socket connectto;
 
 wakelock_use(tee);
+
+hwbinder_use(tee)
+get_prop(tee, hwservicemanager_prop)
+
+binder_call(tee, hal_tui_comm_qti)
+allow tee hal_tui_comm_hwservice:hwservice_manager find;
+
+binder_call(tee, hal_graphics_composer_default)
+allow tee hal_display_config_hwservice:hwservice_manager find;
+allow tee hal_graphics_allocator_default:fd use;
