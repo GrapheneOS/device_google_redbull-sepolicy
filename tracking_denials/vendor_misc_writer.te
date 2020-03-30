@@ -1,4 +1,0 @@
-# b/150279923
-dontaudit vendor_misc_writer gsi_metadata_file:dir search;
-dontaudit vendor_misc_writer proc_cmdline:file { getattr open };
-dontaudit vendor_misc_writer public_vendor_default_prop:file { getattr map open read };
