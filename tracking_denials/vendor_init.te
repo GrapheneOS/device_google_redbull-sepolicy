@@ -1,5 +1,2 @@
 # b/145485815
 dontaudit vendor_init default_prop:property_service set;
-
-# b/145488847
-dontaudit vendor_init system_prop:property_service set;
