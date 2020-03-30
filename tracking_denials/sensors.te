@@ -1,9 +1,0 @@
-# b/150280576
-dontaudit sensors ion_device:chr_file { ioctl open read };
-dontaudit sensors qdsp_device:chr_file { ioctl open read };
-dontaudit sensors self:capability2 block_suspend;
-dontaudit sensors sensors_persist_file:dir { add_name getattr open read remove_name write };
-dontaudit sensors sensors_persist_file:file { create getattr open read rename unlink write };
-dontaudit sensors sysfs_soc:dir search;
-dontaudit sensors sysfs_soc:file { getattr open read };
-dontaudit sensors sysfs_wake_lock:file { open read write };
