@@ -1,2 +1,0 @@
-# b/148005188
-dontaudit bootanim kernel:system module_request;
