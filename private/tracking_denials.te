@@ -1,0 +1,7 @@
+# b/152624411
+dontaudit linkerconfig self:capability kill;
+
+# b/152624073
+dontaudit system_suspend sysfs_batteryinfo:dir read;
+dontaudit system_suspend sysfs:dir read;
+dontaudit system_suspend sysfs_rtc:dir read;
