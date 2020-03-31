@@ -5,6 +5,7 @@ net_domain(qtidataservices_app)
 add_hwservice(qtidataservices_app, hal_cacert_hwservice)
 
 get_prop(qtidataservices_app, vendor_default_prop)
+set_prop(qtidataservices_app, exported_radio_prop)
 
 allow qtidataservices_app hal_datafactory_hwservice:hwservice_manager find;
 allow qtidataservices_app hal_iwlan_hwservice:hwservice_manager find;
