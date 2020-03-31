@@ -28,8 +28,6 @@
 /vendor/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-noronha                 u:object_r:hal_neuralnetworks_darwinn_exec:s0
 /vendor/bin/hw/android\.hardware\.oemlock@1\.0-service\.citadel                       u:object_r:hal_oemlock_citadel_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.pixel                    u:object_r:hal_power_stats_default_exec:s0
-/vendor/bin/hw/android\.hardware\.power@1\.3-service\.pixel-libperfmgr                u:object_r:hal_power_default_exec:s0
-/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.pixel                         u:object_r:hal_thermal_default_exec:s0
 /vendor/bin/hw/android\.hardware\.weaver@1\.0-service\.citadel                        u:object_r:hal_weaver_citadel_exec:s0
 /vendor/bin/hw/citadeld                                                               u:object_r:citadeld_exec:s0
 /vendor/bin/hw/init_citadel                                                           u:object_r:init_citadel_exec:s0
@@ -41,7 +39,6 @@
 /vendor/bin/color_init                                                                u:object_r:color_init_exec:s0
 /vendor/bin/init\.ramoops\.sh                                                         u:object_r:ramoops_exec:s0
 /vendor/bin/modem_svc                                                                 u:object_r:modem_svc_exec:s0
-/vendor/bin/thermal_logd                                                              u:object_r:init-thermal-logging-sh_exec:s0
 /vendor/bin/ramoops                                                                   u:object_r:ramoops_exec:s0
 /vendor/bin/ramdump                                                                   u:object_r:ramdump_exec:s0
 /vendor/bin/rlsservice                                                                u:object_r:rlsservice_exec:s0
