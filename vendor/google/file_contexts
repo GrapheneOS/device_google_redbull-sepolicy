@@ -7,8 +7,6 @@
 /dev/ipu                                                                              u:object_r:ipu_device:s0
 /dev/maxfg_history                                                                    u:object_r:maxfg_device:s0
 /dev/vd6281                                                                           u:object_r:rls_device:s0
-/dev/snd/pcmC0D92c                                                                    u:object_r:rls_device:s0
-/dev/snd/pcmC0D102c                                                                   u:object_r:rls_device:s0
 /dev/snd/controlC0                                                                    u:object_r:rls_device:s0
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
 /dev/iaxxx-module-celldrv                                                             u:object_r:pwrstats_device:s0
