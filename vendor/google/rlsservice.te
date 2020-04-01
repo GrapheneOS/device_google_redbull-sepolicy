@@ -23,6 +23,7 @@ allow rlsservice sysfs_leds:file r_file_perms;
 
 # For rlsservice to access audio
 allow rlsservice audio_device:dir search;
+allow rlsservice audio_device:chr_file rw_file_perms;
 allow rlsservice proc_asound:dir search;
 allow rlsservice proc_asound:file r_file_perms;
 
