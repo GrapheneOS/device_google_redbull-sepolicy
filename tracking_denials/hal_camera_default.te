@@ -40,7 +40,6 @@ dontaudit hal_camera_default dumpstate_options_prop:file { getattr map open };
 dontaudit hal_camera_default dumpstate_prop:file { getattr map open };
 dontaudit hal_camera_default dynamic_system_prop:file { getattr map open };
 dontaudit hal_camera_default ecoservice_prop:file { getattr map open };
-dontaudit hal_camera_default exported2_config_prop:file { getattr map open };
 dontaudit hal_camera_default exported2_radio_prop:file { getattr map open };
 dontaudit hal_camera_default exported2_system_prop:file { getattr map open };
 dontaudit hal_camera_default exported2_vold_prop:file { getattr map open };
