@@ -25,13 +25,6 @@ sensors sensors qipcrtr_socket 129437033
 sensors sysfs_esoc dir 129437033
 sensors sysfs_ssr file 129437033
 system_app vendor_display_prop file 131773821
-thermal-engine socket_device dir 124250714
-thermal-engine sysfs_batteryinfo dir 124250714
-thermal-engine sysfs dir 124250714
-thermal-engine sysfs_esoc dir 124250714
-thermal-engine sysfs_leds dir 124250714
-thermal-engine sysfs_soc dir 124250714
-thermal-engine sysfs_ssr file 124250714
 time_daemon sysfs_esoc dir 128869480
 time_daemon sysfs_faceauth dir 128869480
 time_daemon sysfs_faceauth file 128869480
