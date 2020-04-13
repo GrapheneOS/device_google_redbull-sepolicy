@@ -155,3 +155,6 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/imei1                  
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/imei2                  u:object_r:sysfs_imei:s0
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/meid1                  u:object_r:sysfs_imei:s0
 genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/meid2                  u:object_r:sysfs_imei:s0
+
+# Sensor ALSP feature
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/te2_table     u:object_r:sysfs_leds:s0
