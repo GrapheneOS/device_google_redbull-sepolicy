@@ -77,6 +77,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service u:object_r:hal_sensorscalibrate_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.media\.c2@1\.0-service u:object_r:mediacodec_exec:s0
 /(vendor|system/vendor)/bin/qti                 u:object_r:qti_exec:s0
+/(vendor|system/vendor)/bin/ssgtzd              u:object_r:ssgtzd_exec:s0
+/(vendor|system/vendor)/bin/feature_enabler_client              u:object_r:feature_enabler_client_exec:s0
 
 # dev socket nodes
 /dev/socket/chre                                u:object_r:chre_socket:s0
@@ -86,6 +88,7 @@
 /dev/socket/ims_qmid                            u:object_r:ims_socket:s0
 /dev/socket/ims_datad                           u:object_r:ims_socket:s0
 /dev/socket/cnd                                 u:object_r:cnd_socket:s0
+/dev/socket/ssgtzd                              u:object_r:ssgtzd_socket:s0
 
 
 ###################################
@@ -240,6 +243,7 @@
 /dev/msm_.*                                     u:object_r:audio_device:s0
 /dev/ramdump_.*                                 u:object_r:ramdump_device:s0
 /dev/at_.*                                      u:object_r:at_device:s0
+/dev/smcinvoke                                  u:object_r:smcinvoke_device:s0
 
 # dev socket nodes
 /dev/socket/ipacm_log_file                      u:object_r:ipacm_socket:s0
