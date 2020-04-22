@@ -1,5 +1,0 @@
-# b/147473411
-dontaudit hal_power_stats_default sysfs:file { getattr open read };
-dontaudit hal_power_stats_default sysfs_iio_devices:dir { open read search };
-dontaudit hal_power_stats_default sysfs_power_stats_ignore:dir search;
-dontaudit hal_power_stats_default sysfs_power_stats_ignore:file { open read };
