@@ -34,3 +34,6 @@ allow hal_sensors_default system_server:binder call;
 # For rear light
 allow hal_sensors_default rls_service:service_manager find;
 binder_call(hal_sensors_default, rlsservice)
+
+# For call state
+allow hal_sensors_default sysfs_call_state:file r_file_perms;
