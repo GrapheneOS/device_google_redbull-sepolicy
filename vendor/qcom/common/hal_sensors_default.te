@@ -37,3 +37,7 @@ binder_call(hal_sensors_default, rlsservice)
 
 # For call state
 allow hal_sensors_default sysfs_call_state:file r_file_perms;
+
+# For touch palm
+allow hal_sensors_default sysfs_touch:file rw_file_perms;
+allow hal_sensors_default sysfs_touch:dir r_dir_perms;
