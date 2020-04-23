@@ -36,26 +36,26 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/xbl_[ab]            u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/xbl_config_[ab]     u:object_r:custom_ab_block_device:s0
 
-/sys/devices/platform/soc/4080000\.qcom,mss/subsys[0-9]+                     u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/4080000\.qcom,mss/subsys[0-9]+(/.*)?               u:object_r:sysfs_msm_subsys:s0
 /sys/devices/platform/soc/4080000\.qcom,mss/subsys[0-9]+/name                u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/4080000\.qcom,mss/subsys[0-9]+/crash_reason        u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/4080000\.qcom,mss/subsys[0-9]+/restart_level       u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/3000000\.qcom,lpass/subsys[0-9]+                   u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/3000000\.qcom,lpass/subsys[0-9]+(/.*)?             u:object_r:sysfs_msm_subsys:s0
 /sys/devices/platform/soc/3000000\.qcom,lpass/subsys[0-9]+/name              u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/3000000\.qcom,lpass/subsys[0-9]+/restart_level     u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/8300000\.qcom,turing/subsys[0-9]+                  u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/8300000\.qcom,turing/subsys[0-9]+(/.*)?            u:object_r:sysfs_msm_subsys:s0
 /sys/devices/platform/soc/8300000\.qcom,turing/subsys[0-9]+/name             u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/8300000\.qcom,turing/subsys[0-9]+/restart_level    u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+                     u:object_r:sysfs_msm_subsys:s0
-/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+/name                u:object_r:sysfs_ssr:s0
-/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+/restart_level       u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+                    u:object_r:sysfs_msm_subsys:s0
-/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+/name               u:object_r:sysfs_ssr:s0
-/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+/restart_level      u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/aae0000\.qcom,venus/subsys[0-9]+                   u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+(/.*)?                u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+/name                 u:object_r:sysfs_ssr:s0
+/sys/devices/platform/soc/soc:qcom,ipa_fws/subsys[0-9]+/restart_level        u:object_r:sysfs_ssr_writable:s0
+/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+(/.*)?               u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+/name                u:object_r:sysfs_ssr:s0
+/sys/devices/platform/soc/soc:qcom,kgsl-hyp/subsys[0-9]+/restart_level       u:object_r:sysfs_ssr_writable:s0
+/sys/devices/platform/soc/aae0000\.qcom,venus/subsys[0-9]+(/.*)?             u:object_r:sysfs_msm_subsys:s0
 /sys/devices/platform/soc/aae0000\.qcom,venus/subsys[0-9]+/name              u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/aae0000\.qcom,venus/subsys[0-9]+/restart_level     u:object_r:sysfs_ssr_writable:s0
-/sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+                     u:object_r:sysfs_msm_subsys:s0
+/sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+(/.*)?               u:object_r:sysfs_msm_subsys:s0
 /sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+/name                u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+/restart_level       u:object_r:sysfs_ssr_writable:s0
 
