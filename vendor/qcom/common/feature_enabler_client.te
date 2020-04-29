@@ -18,3 +18,4 @@ hwbinder_use(feature_enabler_client);
 binder_call(feature_enabler_client, hal_graphics_composer)
 allow feature_enabler_client qdisplay_service:service_manager find;
 add_service(feature_enabler_client, qfeatenab_client_service)
+unix_socket_connect(feature_enabler_client, ssgtzd, ssgtzd)
