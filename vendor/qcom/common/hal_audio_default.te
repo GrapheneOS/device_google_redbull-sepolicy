@@ -29,3 +29,6 @@ get_prop(hal_audio_default, vendor_audio_prop);
 
 # For audio hal to talk with rainbow sensor
 allow hal_audio_default rls_device:chr_file rw_file_perms;
+
+# Allow audio HAL to communicate with CHRE daemon via socket
+unix_socket_connect(hal_audio_default, chre, chre);
