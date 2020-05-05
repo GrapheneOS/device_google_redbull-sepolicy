@@ -7,3 +7,4 @@ type rls_device, dev_type;
 type pwrstats_device, dev_type;
 type dp_block_device, dev_type;
 type qg_device, dev_type;
+type smcinvoke_device, dev_type;
