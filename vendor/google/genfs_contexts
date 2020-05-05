@@ -51,6 +51,12 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 u:object_r:sysfs_power_stats_ignore:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm8150l@4:vadc@3100/iio:device2
 u:object_r:sysfs_power_stats_ignore:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-00/c440000.qcom,spmi:qcom,pm8150@0:vadc@3100/iio:device0
+u:object_r:sysfs_power_stats_ignore:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1
+u:object_r:sysfs_power_stats_ignore:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-04/c440000.qcom,spmi:qcom,pm8150l@4:vadc@3100/iio:device2
+u:object_r:sysfs_power_stats_ignore:s0
 
 # Display
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/backlight                          u:object_r:sysfs_leds:s0
@@ -83,6 +89,10 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,usb-pdphy@1700/usbpd0/power_supply  u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:google,bms/power_supply                  u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-1/1-003b                    u:object_r:sysfs_wlc:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qpnp,qg/power_supply                     u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/power_supply              u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,usb-pdphy@1700/usbpd0/power_supply  u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:google,bms/power_supply                  u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-1/1-003b/power_supply       u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/health_descriptor            u:object_r:sysfs_scsi_devices_0000:s0
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/host0/target0:0:0/0:0:0:     u:object_r:sysfs_scsi_devices_0000:s0
@@ -117,6 +127,8 @@ genfscon debugfs /logbuffer/smblib                    u:object_r:debugfs_usb:s0
 genfscon debugfs /logbuffer/pps			      u:object_r:debugfs_usb:s0
 genfscon sysfs /class/typec                           u:object_r:sysfs_typec_info:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,usb-pdphy@1700/typec              u:object_r:sysfs_typec_info:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,usb-pdphy@1700/typec              u:object_r:sysfs_typec_info:s0
+
 
 # Dumpstate hal
 genfscon debugfs /dma_buf/bufinfo                     u:object_r:debugfs_dma_buf:s0
@@ -137,6 +149,9 @@ genfscon debugfs /pmic-votable                        u:object_r:debugfs_pmic:s0
 # USB contaminant detection
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detected            u:object_r:sysfs_contaminant:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detection_enabled   u:object_r:sysfs_contaminant:s0
+
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detected            u:object_r:sysfs_contaminant:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/0-02/c440000.qcom,spmi:qcom,pm7250b@2:qcom,qpnp-smb5/power_supply/usb/moisture_detection_enabled   u:object_r:sysfs_contaminant:s0
 
 # Bootloader
 genfscon proc /bldrlog                                u:object_r:proc_bldrlog:s0
