@@ -15,14 +15,14 @@ allow qtelephony mediaextractor_service:service_manager find;
 allow qtelephony mediametrics_service:service_manager find;
 allow qtelephony mediaserver_service:service_manager find;
 allow qtelephony sysfs_soc:dir search;
-allow qtelephony sysfs_soc:file r_file_perms; 
+allow qtelephony sysfs_soc:file r_file_perms;
 
 binder_call(qtelephony, hal_imsrtp)
 hal_client_domain(qtelephony, hal_telephony)
 
 get_prop(qtelephony, vendor_radio_prop)
 get_prop(qtelephony, public_vendor_default_prop)
-get_prop(qtelephony, qcom_ims_prop)
+set_prop(qtelephony, qcom_ims_prop)
 
 userdebug_or_eng(`
     allow qtelephony diag_device:chr_file rw_file_perms;
