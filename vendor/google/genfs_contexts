@@ -174,3 +174,6 @@ genfscon sysfs /firmware/devicetree/base/chosen/cdt/cdb2/meid2                  
 
 # Sensor ALSP feature
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/te2_table     u:object_r:sysfs_leds:s0
+
+# Call state
+genfscon sysfs /devices/platform/soc/soc:qcom,msm-audio-apr/soc:qcom,msm-audio-apr:qcom,q6core-audio/soc:qcom,msm-audio-apr:qcom,q6core-audio:sound/call_state  u:object_r:sysfs_call_state:s0
