@@ -1,5 +1,5 @@
-PRODUCT_PUBLIC_SEPOLICY_DIRS := device/google/redbull-sepolicy/public
-PRODUCT_PRIVATE_SEPOLICY_DIRS := device/google/redbull-sepolicy/private
+PRODUCT_PUBLIC_SEPOLICY_DIRS += device/google/redbull-sepolicy/public
+PRODUCT_PRIVATE_SEPOLICY_DIRS += device/google/redbull-sepolicy/private
 
 # vendors
 BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/google
