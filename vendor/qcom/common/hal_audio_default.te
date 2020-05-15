@@ -1,6 +1,9 @@
 # For interfacing with PowerHAL
 hal_client_domain(hal_audio_default, hal_power);
 
+# For interfacing with ThermalHAL
+hal_client_domain(hal_audio_default, hal_thermal);
+
 # For QCOM diag port access
 userdebug_or_eng(`
   allow hal_audio diag_device:chr_file rw_file_perms;
