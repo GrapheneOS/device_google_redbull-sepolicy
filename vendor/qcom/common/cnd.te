@@ -36,8 +36,12 @@ add_hwservice(cnd, hal_datafactory_hwservice)
 
 #for video call
 binder_call(cnd, ims)
+
+# allow diag logging
 userdebug_or_eng(`
   allow cnd diag_device:chr_file rw_file_perms;
+  allow cnd sysfs_timestamp_switch:file r_file_perms;
+  r_dir_file(cnd, sysfs_diag)
 ')
 
 # For WFC call(RAT change into IWLAN)
