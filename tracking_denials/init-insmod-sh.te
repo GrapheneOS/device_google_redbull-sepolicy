@@ -1,2 +1,0 @@
-# b/143475560
-dontaudit init-insmod-sh proc_cmdline:file { getattr open read };
