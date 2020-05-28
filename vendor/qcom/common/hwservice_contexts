@@ -14,6 +14,7 @@ vendor.qti.hardware.qdutils_disp::IQdutilsDisp                          u:object
 vendor.qti.hardware.qteeconnector::IAppConnector                        u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.qteeconnector::IGPAppConnector                      u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.radio.am::IQcRilAudio                               u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.internal.deviceinfo::IDeviceInfo              u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.lpa::IUimLpa                                  u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.qcrilhook::IQtiOemHook                        u:object_r:hal_telephony_hwservice:s0
 vendor.qti.hardware.radio.qtiradio::IQtiRadio                           u:object_r:hal_telephony_hwservice:s0
