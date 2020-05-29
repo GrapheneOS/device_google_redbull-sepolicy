@@ -1,0 +1,2 @@
+# b/157435953
+dontaudit hal_graphics_composer_default sysfs_soc:dir search;
