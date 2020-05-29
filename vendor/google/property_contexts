@@ -66,3 +66,6 @@ ro.vibrator.hal.long.frequency.shift            u:object_r:vendor_vibrator_prop:
 ro.vibrator.hal.effect.shape                    u:object_r:vendor_vibrator_prop:s0
 ro.vibrator.hal.steady.shape                    u:object_r:vendor_vibrator_prop:s0
 ro.vibrator.hal.lptrigger                       u:object_r:vendor_vibrator_prop:s0
+
+#USB
+persist.vendor.sys.usb.pdo			u:object_r:vendor_usb_prop:s0
