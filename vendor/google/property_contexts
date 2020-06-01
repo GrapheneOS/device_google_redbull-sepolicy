@@ -68,4 +68,4 @@ ro.vibrator.hal.steady.shape                    u:object_r:vendor_vibrator_prop:
 ro.vibrator.hal.lptrigger                       u:object_r:vendor_vibrator_prop:s0
 
 #USB
-persist.vendor.sys.usb.pdo			u:object_r:vendor_usb_prop:s0
+persist.vendor.usb.pdo                          u:object_r:vendor_usb_prop:s0
