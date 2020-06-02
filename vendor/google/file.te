@@ -49,3 +49,6 @@ type debugfs_ipa, debugfs_type, fs_type;
 
 # IPA Data Stall Detection
 type debugfs_ipa_data_stall_detection, debugfs_type, fs_type;
+
+# RamdumpFS
+allow ramdump_vendor_mnt_file self:filesystem associate;
