@@ -11,3 +11,5 @@ dontaudit hal_fingerprint_default sysfs_camera:dir search;
 dontaudit hal_fingerprint_default sysfs_camera:file r_file_perms;
 dontaudit hal_fingerprint_default sysfs_rmtfs:dir search;
 dontaudit hal_fingerprint_default sysfs_rmtfs:file r_file_perms;
+dontaudit hal_fingerprint_default sysfs_thermal:dir search;
+dontaudit hal_fingerprint_default sysfs_thermal:file r_file_perms;
