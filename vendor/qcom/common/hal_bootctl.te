@@ -21,3 +21,9 @@ allow hal_bootctl_default sysfs_scsi_devices_0000:dir r_dir_perms;
 
 # Write to the XBL devices.
 allow hal_bootctl_default xbl_block_device:blk_file rw_file_perms;
+
+# We never apply OTAs when GSI is running
+dontaudit hal_bootctl_default gsi_metadata_file:dir search;
+
+# Allow bootctl HAL to read ro.boot.hardware.platform
+get_prop(hal_bootctl_default, public_vendor_default_prop)
