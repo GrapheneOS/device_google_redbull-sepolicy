@@ -1,3 +1,0 @@
-# b/152624953
-dontaudit hal_bootctl_default gsi_metadata_file:dir search;
-dontaudit hal_bootctl_default public_vendor_default_prop:file { getattr map open read };
