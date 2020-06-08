@@ -1,2 +1,6 @@
 # b/152624986
 dontaudit platform_app default_android_hwservice:hwservice_manager find;
+
+# b/157915098
+dontaudit platform_app default_android_hwservice:hwservice_manager find;
+dontaudit platform_app vendor_file:file { execute getattr map open read };

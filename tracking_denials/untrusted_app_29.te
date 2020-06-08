@@ -1,0 +1,3 @@
+# b/157915098
+dontaudit untrusted_app_29 default_android_hwservice:hwservice_manager find;
+dontaudit untrusted_app_29 vendor_file:file { execute getattr map open read };

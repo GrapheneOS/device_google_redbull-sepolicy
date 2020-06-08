@@ -1,0 +1,3 @@
+# b/157915098
+dontaudit bootanim default_android_hwservice:hwservice_manager find;
+dontaudit bootanim vendor_file:file { execute getattr map open read };
