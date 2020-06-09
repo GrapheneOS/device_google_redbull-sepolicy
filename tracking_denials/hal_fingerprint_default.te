@@ -1,2 +1,0 @@
-# b/156216756
-dontaudit hal_fingerprint_default sysfs_thermal:dir search;
