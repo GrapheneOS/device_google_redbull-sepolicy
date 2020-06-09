@@ -1,7 +1,0 @@
-# b/145496740
-dontaudit netd hal_imsrtp:fd use;
-dontaudit netd hal_imsrtp:udp_socket { getopt read setopt write };
-
-# b/145503975
-dontaudit netd hal_rcsservice:fd use;
-dontaudit netd hal_rcsservice:udp_socket { getopt read setopt write };

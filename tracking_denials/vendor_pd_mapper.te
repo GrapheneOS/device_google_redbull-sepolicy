@@ -1,3 +1,0 @@
-# b/145580178
-dontaudit vendor_pd_mapper sysfs_msm_subsys:dir { open read search };
-dontaudit vendor_pd_mapper sysfs_ssr:file { open read };
