@@ -4,3 +4,4 @@ binder_call(platform_app, hal_wlc)
 binder_call(hal_wlc, platform_app)
 
 allow platform_app fwk_stats_hwservice:hwservice_manager find;
+allow platform_app nfc_service:service_manager find;
