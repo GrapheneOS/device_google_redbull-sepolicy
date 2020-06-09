@@ -1,5 +1,0 @@
-# b/152624632
-dontaudit init sysfs:file setattr;
-
-# b/146920963
-dontaudit init socket_device:sock_file { create setattr unlink };
