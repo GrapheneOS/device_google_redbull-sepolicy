@@ -59,3 +59,5 @@
 /sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+/name                u:object_r:sysfs_ssr:s0
 /sys/devices/platform/soc/9800000\.qcom,npu/subsys[0-9]+/restart_level       u:object_r:sysfs_ssr_writable:s0
 
+/sys/devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/video[0-9]+/name  u:object_r:sysfs_graphics_unused:s0
+/sys/devices/platform/cam_sync/video4linux/video[0-9]+/name                  u:object_r:sysfs_graphics_unused:s0
