@@ -1,2 +1,0 @@
-# b/150280129
-dontaudit kernel debugfs_batteryinfo:dir search;

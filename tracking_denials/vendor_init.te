@@ -1,2 +1,3 @@
-# b/145485815
-dontaudit vendor_init default_prop:property_service set;
+# b/158447828
+dontaudit vendor_init debugfs_tracing_instances:dir { add_name create write };
+dontaudit vendor_init debugfs_tracing_instances:file write;
