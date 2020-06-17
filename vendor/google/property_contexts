@@ -69,3 +69,6 @@ ro.vibrator.hal.lptrigger                       u:object_r:vendor_vibrator_prop:
 
 #USB
 persist.vendor.usb.pdo                          u:object_r:vendor_usb_prop:s0
+
+# Sensor
+vendor.sensor.                                  u:object_r:vendor_sensor_prop:s0
