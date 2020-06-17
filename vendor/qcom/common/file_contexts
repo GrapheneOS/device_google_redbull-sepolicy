@@ -77,6 +77,7 @@
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.sensorscalibrate@1\.0-service u:object_r:hal_sensorscalibrate_qti_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.media\.c2@1\.0-service u:object_r:mediacodec_exec:s0
 /(vendor|system/vendor)/bin/qti                 u:object_r:qti_exec:s0
+/(vendor|system/vendor)/bin/adpl                u:object_r:adpl_exec:s0
 /(vendor|system/vendor)/bin/ssgtzd              u:object_r:ssgtzd_exec:s0
 /(vendor|system/vendor)/bin/feature_enabler_client              u:object_r:feature_enabler_client_exec:s0
 
@@ -89,7 +90,7 @@
 /dev/socket/ims_datad                           u:object_r:ims_socket:s0
 /dev/socket/cnd                                 u:object_r:cnd_socket:s0
 /dev/socket/ssgtzd                              u:object_r:ssgtzd_socket:s0
-
+/dev/socket/adpl_cmd_uds_file                   u:object_r:dataadpl_socket:s0
 
 ###################################
 # persist files
@@ -222,6 +223,9 @@
 
 # dev nodes
 /dev/ipa                                        u:object_r:ipa_dev:s0
+/dev/ipa_adpl                                   u:object_r:ipa_dev:s0
+/dev/ipa_odl_ctl                                u:object_r:ipa_dev:s0
+/dev/dpl_ctrl                                   u:object_r:rmnet_device:s0
 /dev/wwan_ioctl                                 u:object_r:ipa_dev:s0
 /dev/ipaNatTable                                u:object_r:ipa_dev:s0
 /dev/sg[0-9]+                                   u:object_r:sg_device:s0
