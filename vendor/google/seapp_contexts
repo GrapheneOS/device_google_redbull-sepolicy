@@ -14,9 +14,6 @@ user=_app seinfo=platform name=com.android.pixellogger domain=logger_app type=ap
 # Domain for GoogleCBRS app
 user=_app seinfo=platform name=com.google.googlecbrs domain=cbrs_setup_app type=app_data_file levelFrom=user
 
-# Domain for Touch app
-user=_app seinfo=platform name=com.google.touch.touchinspector domain=google_touch_app type=app_data_file levelFrom=user
-
 # Use a custom domain for GoogleCamera, to allow for Hexagon DSP access
 user=_app seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
 
