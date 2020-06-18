@@ -3,3 +3,6 @@ attribute hal_display_color;
 attribute hal_qseecom;
 attribute hal_qseecom_client;
 attribute hal_qseecom_server;
+attribute hal_qspmhal;
+attribute hal_qspmhal_client;
+attribute hal_qspmhal_server;
