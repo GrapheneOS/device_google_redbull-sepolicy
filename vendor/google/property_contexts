@@ -39,7 +39,6 @@ ro.vendor.camera.req.fmq.size                   u:object_r:camera_ro_prop:s0
 
 ro.vendor.build.type                            u:object_r:vendor_build_type_prop:s0
 
-ro.vendor.aware_available                       u:object_r:vendor_aware_available_prop:s0
 
 persist.vendor.modem.                           u:object_r:vendor_modem_prop:s0
 persist.vendor.mdm.                             u:object_r:vendor_modem_prop:s0
