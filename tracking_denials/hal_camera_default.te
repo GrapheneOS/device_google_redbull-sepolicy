@@ -1,2 +1,0 @@
-# b/155252147
-dontaudit hal_camera_default default_android_hwservice:hwservice_manager find;
