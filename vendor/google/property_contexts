@@ -13,7 +13,7 @@ audio.adm.buffering.ms                          u:object_r:vendor_audio_prop:s0
 
 ro.boot.usbcontroller                           u:object_r:vendor_usb_prop:s0
 
-ro.boot.hardware.platform                       u:object_r:public_vendor_default_prop:s0
+ro.boot.hardware.platform                       u:object_r:vendor_public_default_prop:s0
 
 vendor.display.primary_red                      u:object_r:vendor_display_prop:s0
 vendor.display.primary_green                    u:object_r:vendor_display_prop:s0
@@ -33,9 +33,9 @@ vendor.tcpdump.output.dir                       u:object_r:vendor_tcpdump_log_pr
 persist.vendor.shutdown.                        u:object_r:vendor_shutdown_prop:s0
 
 # Google camera hal read only props
-ro.vendor.camera.                               u:object_r:camera_ro_prop:s0
-ro.vendor.camera.res.fmq.size                   u:object_r:camera_ro_prop:s0
-ro.vendor.camera.req.fmq.size                   u:object_r:camera_ro_prop:s0
+ro.vendor.camera.                               u:object_r:vendor_camera_ro_prop:s0
+ro.vendor.camera.res.fmq.size                   u:object_r:vendor_camera_ro_prop:s0
+ro.vendor.camera.req.fmq.size                   u:object_r:vendor_camera_ro_prop:s0
 
 ro.vendor.build.type                            u:object_r:vendor_build_type_prop:s0
 

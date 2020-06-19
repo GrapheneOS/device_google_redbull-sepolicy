@@ -17,7 +17,7 @@ init kernel system 132409186
 init socket_device sock_file 132412558
 kernel kernel capability 132594872
 netd netd capability 129670638
-priv_app camera_ro_prop file 134899434
+priv_app vendor_camera_ro_prop file 134899434
 qtidataservices_app sysfs_esoc dir 131581902
 qtidataservices_app sysfs_msm_subsys dir 131581902
 sensors diag_device chr_file 129437033
@@ -34,7 +34,7 @@ time_daemon sysfs_soc file 128869480
 time_daemon sysfs_ssr file 128869480
 time_daemon unlabeled dir 135646017
 ueventd ueventd capability 132595817
-untrusted_app_27 camera_ro_prop file 134899434
+untrusted_app_27 vendor_camera_ro_prop file 134899434
 vendor_pd_mapper kmsg_device chr_file 129744410
 vendor_pd_mapper sysfs_esoc dir 129744410
 vendor_pd_mapper sysfs_msm_subsys dir 129744410
