@@ -1,3 +1,0 @@
-# b/157915098
-dontaudit gmscore_app default_android_hwservice:hwservice_manager find;
-dontaudit gmscore_app vendor_file:file { execute getattr map open read };
