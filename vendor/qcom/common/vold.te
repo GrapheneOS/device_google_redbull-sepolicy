@@ -1,4 +1,4 @@
 dontaudit vold kernel:system module_request;
 
 allow vold sysfs_scsi_devices_0000:file w_file_perms;
-get_prop(vold, public_vendor_default_prop)
+get_prop(vold, vendor_public_default_prop)

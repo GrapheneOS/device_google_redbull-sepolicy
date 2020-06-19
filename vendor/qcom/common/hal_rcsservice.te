@@ -14,7 +14,7 @@ add_hwservice(hal_rcsservice, hal_imscallinfo_hwservice)
 add_hwservice(hal_rcsservice, hal_imsfactory_hwservice)
 
 get_prop(hal_rcsservice, hwservicemanager_prop)
-set_prop(hal_rcsservice, qcom_ims_prop)
+set_prop(hal_rcsservice, vendor_qcom_ims_prop)
 
 allow hal_rcsservice sysfs_timestamp_switch:file r_file_perms;
 allow hal_rcsservice self:qipcrtr_socket create_socket_perms_no_ioctl;
