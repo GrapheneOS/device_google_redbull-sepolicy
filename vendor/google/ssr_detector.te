@@ -13,7 +13,7 @@ userdebug_or_eng(`
 ')
 
 get_prop(ssr_detector_app, vendor_wifi_version)
-get_prop(ssr_detector_app, public_vendor_system_prop)
+get_prop(ssr_detector_app, vendor_public_system_prop)
 
 # ssr_detector app's data type is system_app_data_file.
 allow ssr_detector_app system_app_data_file:dir { getattr search };

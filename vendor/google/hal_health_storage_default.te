@@ -1,4 +1,4 @@
 # idle-maint
-get_prop(hal_health_storage_default, public_vendor_default_prop)
+get_prop(hal_health_storage_default, vendor_public_default_prop)
 allow hal_health_storage_default metadata_file:dir r_dir_perms;
 allow hal_health_storage_default sysfs_scsi_devices_0000:file rw_file_perms;
