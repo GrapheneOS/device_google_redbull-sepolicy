@@ -1,8 +1,0 @@
-# b/158447817
-userdebug_or_eng(`
-    dontaudit hwservicemanager ramdump:binder transfer;
-    dontaudit ramdump fwk_stats_hwservice:hwservice_manager find;
-    dontaudit ramdump hwservicemanager:binder call;
-    dontaudit ramdump hwservicemanager_prop:file { getattr map open read };
-    dontaudit ramdump system_server:binder call;
-')
