@@ -8,6 +8,7 @@
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
 /dev/qg                                                                               u:object_r:qg_device:s0
 /dev/qg_battery                                                                       u:object_r:qg_device:s0
+/dev/battery_history                                                                  u:object_r:battery_history_device:s0
 
 # pixelstats binary
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
