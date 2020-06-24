@@ -21,7 +21,7 @@ binder_call(qtelephony, hal_imsrtp)
 hal_client_domain(qtelephony, hal_telephony)
 
 get_prop(qtelephony, vendor_radio_prop)
-get_prop(qtelephony, vendor_public_default_prop)
+get_prop(qtelephony, vendor_telephony_vtcam_prop)
 set_prop(qtelephony, vendor_qcom_ims_prop)
 
 userdebug_or_eng(`

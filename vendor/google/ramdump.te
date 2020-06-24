@@ -4,7 +4,7 @@ userdebug_or_eng(`
   init_daemon_domain(ramdump)
 
   set_prop(ramdump, vendor_ramdump_prop)
-  get_prop(ramdump, vendor_public_default_prop)
+  get_prop(ramdump, vendor_hw_plat_prop)
 
   # f2fs set pin file requires sys_admin
   allow ramdump self:capability sys_admin;

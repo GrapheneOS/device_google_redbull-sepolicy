@@ -11,3 +11,5 @@ type vendor_sensor_prop, property_type;
 
 # vendor verbose logging property
 type vendor_logging_prop, property_type;
+
+vendor_public_prop(vendor_hw_plat_prop)
