@@ -6,7 +6,7 @@ allow vendor_init ipa_dev:chr_file w_file_perms;
 allow vendor_init proc_swappiness:file w_file_perms;
 allow vendor_init proc_dirty:file w_file_perms;
 
-get_prop(vendor_init, vendor_public_default_prop)
+get_prop(vendor_init, vendor_hw_plat_prop)
 set_prop(vendor_init, vendor_build_type_prop)
 set_prop(vendor_init, vendor_ssr_prop)
 set_prop(vendor_init, vendor_display_prop)
