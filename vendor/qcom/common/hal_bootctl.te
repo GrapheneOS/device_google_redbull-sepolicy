@@ -26,4 +26,4 @@ allow hal_bootctl_default xbl_block_device:blk_file rw_file_perms;
 dontaudit hal_bootctl_default gsi_metadata_file:dir search;
 
 # Allow bootctl HAL to read ro.boot.hardware.platform
-get_prop(hal_bootctl_default, vendor_public_default_prop)
+get_prop(hal_bootctl_default, vendor_hw_plat_prop)
