@@ -31,3 +31,6 @@ user=_app seinfo=platform name=com.google.android.uvexposurereporter domain=uv_e
 
 # Domain for DeviceDropMonitor service
 user=_app seinfo=platform name=com.google.android.devicedropmonitor domain=device_drop_monitor type=app_data_file levelFrom=all
+
+# Domain for IpHealthMonitor service
+user=_app seinfo=platform name=com.google.android.iphealthmonitor domain=ip_health_monitor type=app_data_file levelFrom=all
