@@ -1,0 +1,1 @@
+dontaudit pixelstats_vendor sysfs_typec_info:dir search;
