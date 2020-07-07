@@ -110,6 +110,9 @@ get_prop(hal_dumpstate_impl, boottime_public_prop)
 # Access to files for dumping
 allow hal_dumpstate_impl sysfs:dir r_dir_perms;
 
+# Access /dev/logbuffer*
+allow hal_dumpstate_impl logbuffer_device:chr_file {open read};
+
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:dir create_dir_perms;
 dontaudit hal_dumpstate_impl tcpdump_vendor_data_file:file create_file_perms;
 dontaudit hal_dumpstate_impl vendor_tcpdump_log_prop:file r_file_perms;
