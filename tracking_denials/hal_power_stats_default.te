@@ -1,3 +1,0 @@
-# b/155252600
-dontaudit hal_power_stats_default sysfs:file read;
-dontaudit hal_power_stats_default sysfs_power_stats_ignore:dir search;
