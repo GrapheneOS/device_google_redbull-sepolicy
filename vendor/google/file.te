@@ -28,7 +28,6 @@ type debugfs_dma_buf, debugfs_type, fs_type;
 type debugfs_clk, debugfs_type, fs_type;
 type debugfs_pmic, debugfs_type, fs_type;
 type sysfs_contaminant, sysfs_type, fs_type;
-type hal_rebootescrow_citadel_data_file, file_type, data_file_type;
 type sysfs_fingerprint, sysfs_type, fs_type;
 type sysfs_typec_info, sysfs_type, fs_type;
 type per_boot_file, file_type, data_file_type, core_data_file_type;
