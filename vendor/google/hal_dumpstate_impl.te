@@ -29,13 +29,15 @@ r_dir_file(hal_dumpstate_impl, debugfs_ion)
 allow hal_dumpstate_impl block_device:dir r_dir_perms;
 
 # dump Battery/Charger/Guage
-allow hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
-allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
 allow hal_dumpstate_impl debugfs_pmic:dir r_dir_perms;
 allow hal_dumpstate_impl debugfs_pmic:file r_file_perms;
 userdebug_or_eng(`
+  allow hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
+  allow hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
   allow hal_dumpstate_impl debugfs_pmic:file rw_file_perms;
 ')
+dontaudit hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
+dontaudit hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
 
 # dump usb files
 allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
@@ -162,3 +164,6 @@ dontaudit hal_dumpstate_impl sensors_vendor_data_file:file r_file_perms;
 
 # Access to thermal debug data
 r_dir_file(hal_dumpstate_impl, sysfs_thermal)
+
+# Access to /sys/devices/soc0/serial_number
+r_dir_file(hal_dumpstate_impl, sysfs_soc)
