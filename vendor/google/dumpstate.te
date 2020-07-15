@@ -1,4 +1,5 @@
 dump_hal(hal_telephony)
+dump_hal(hal_graphics_composer)
 
 userdebug_or_eng(`
   allow dumpstate debugfs_dma_buf:file r_file_perms;
