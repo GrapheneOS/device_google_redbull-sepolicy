@@ -24,6 +24,10 @@ genfscon sysfs /module/diagchar/parameters/timestamp_switch                     
 genfscon sysfs /devices/platform/vim2m.0/video4linux/video0/name                                                                       u:object_r:sysfs_graphics_unused:s0
 genfscon sysfs /devices/platform/vicodec.0/video4linux/video1/name                                                                     u:object_r:sysfs_graphics_unused:s0
 genfscon sysfs /devices/platform/vicodec.0/video4linux/video2/name                                                                     u:object_r:sysfs_graphics_unused:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/video3/name                                                      u:object_r:sysfs_graphics_unused:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,cam-req-mgr/video4linux/video4/name                                                      u:object_r:sysfs_graphics_unused:s0
+genfscon sysfs /devices/platform/cam_sync/video4linux/video3/name                                                                      u:object_r:sysfs_graphics_unused:s0
+genfscon sysfs /devices/platform/cam_sync/video4linux/video4/name                                                                      u:object_r:sysfs_graphics_unused:s0
 genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc0/video4linux/video32/name                                                       u:object_r:sysfs_graphics_unused:s0
 genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc0/video4linux/video33/name                                                       u:object_r:sysfs_graphics_unused:s0
 genfscon sysfs /devices/platform/soc/aa00000.qcom,vidc0/video4linux/video34/name                                                       u:object_r:sysfs_graphics_unused:s0
