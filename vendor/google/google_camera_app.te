@@ -78,3 +78,7 @@ get_prop(google_camera_app, vendor_camera_ro_prop)
 
 # Allow read vendor display prop
 get_prop(google_camera_app, vendor_display_prop)
+
+# Allow read sysfs soc
+allow google_camera_app sysfs_soc:dir search;
+allow google_camera_app sysfs_soc:file r_file_perms;
