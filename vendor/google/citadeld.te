@@ -8,7 +8,6 @@ add_service(citadeld, citadeld_service)
 allow citadeld citadel_device:chr_file rw_file_perms;
 
 binder_call(citadeld, hal_power_stats_default)
-allow citadeld power_stats_service:service_manager find;
 
 allow citadeld debugfs_ipc:dir search;
 
