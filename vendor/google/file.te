@@ -34,6 +34,7 @@ type sysfs_typec_info, sysfs_type, fs_type;
 type per_boot_file, file_type, data_file_type, core_data_file_type;
 type proc_scsi, proc_type, fs_type;
 type sysfs_call_state, sysfs_type, fs_type;
+type proc_sched_lib_mask_cpuinfo, proc_type, fs_type;
 
 # Dumpstates bootloader logs
 type proc_bldrlog, fs_type, proc_type;
