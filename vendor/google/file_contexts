@@ -10,6 +10,7 @@
 /dev/qg                                                                               u:object_r:qg_device:s0
 /dev/qg_battery                                                                       u:object_r:qg_device:s0
 /dev/battery_history                                                                  u:object_r:battery_history_device:s0
+/dev/logbuffer_tcpm                                                                   u:object_r:logbuffer_device:s0
 /dev/logbuffer_usbpd                                                                  u:object_r:logbuffer_device:s0
 /dev/logbuffer_pps                                                                    u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc                                                                   u:object_r:logbuffer_device:s0
