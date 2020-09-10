@@ -67,3 +67,6 @@ ro.vendor.vibrator.hal.lptrigger                u:object_r:vendor_vibrator_prop:
 
 # Sensor
 vendor.sensor.                                  u:object_r:vendor_sensor_prop:s0
+
+# twoshay
+vendor.twoshay.study_group                      u:object_r:vendor_twoshay_prop:s0 exact bool
