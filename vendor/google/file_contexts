@@ -50,6 +50,9 @@
 /vendor/bin/init\.gadgethal\.sh                                                       u:object_r:init_gadgethal_exec:s0
 /vendor/bin/init\.twoshay\.sh                                                         u:object_r:init_twoshay_exec:s0
 
+# Vendor firmware
+/vendor/firmware_mnt(/.*)?                                                            u:object_r:firmware_file:s0
+
 /mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/haptics(/.*)?                                                     u:object_r:persist_haptics_file:s0
 
