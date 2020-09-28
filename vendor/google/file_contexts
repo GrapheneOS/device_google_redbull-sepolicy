@@ -49,6 +49,7 @@
 /vendor/bin/init\.modem\.sh                                                           u:object_r:init_modem_exec:s0
 /vendor/bin/init\.gadgethal\.sh                                                       u:object_r:init_gadgethal_exec:s0
 /vendor/bin/init\.twoshay\.sh                                                         u:object_r:init_twoshay_exec:s0
+/vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 
 # Vendor firmware
 /vendor/firmware_mnt(/.*)?                                                            u:object_r:firmware_file:s0
