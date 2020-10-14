@@ -36,3 +36,10 @@ allow hal_wifi_ext updated_wifi_firmware_data_file:file create_file_perms;
 # Allow wifi_ext to read the updated firmware files from app
 allow hal_wifi_ext priv_app:fd use;
 allow hal_wifi_ext privapp_data_file:file { read map };
+
+userdebug_or_eng(`
+# debugfs entries are only needed in user-debug or eng builds
+
+# Allow wifi hal to access wlan debugfs directories
+allow hal_wifi_ext debugfs_wlan:dir r_dir_perms;
+')
