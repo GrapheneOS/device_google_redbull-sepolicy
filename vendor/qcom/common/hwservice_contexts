@@ -8,7 +8,6 @@ vendor.display.postproc::IDisplayPostproc                               u:object
 vendor.qti.hardware.display.composer::IQtiComposer                      u:object_r:hal_graphics_composer_hwservice:s0
 vendor.qti.hardware.display.mapper::IQtiMapper                          u:object_r:hal_graphics_mapper_hwservice:s0
 vendor.qti.hardware.bluetooth_sar::IBluetoothSar                        u:object_r:hal_bluetooth_coexistence_hwservice:s0
-vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance           u:object_r:hal_bluetooth_coexistence_hwservice:s0
 vendor.qti.hardware.qteeconnector::IAppConnector                        u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.qteeconnector::IGPAppConnector                      u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.radio.am::IQcRilAudio                               u:object_r:hal_telephony_hwservice:s0
