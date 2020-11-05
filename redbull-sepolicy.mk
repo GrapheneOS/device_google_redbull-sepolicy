@@ -10,6 +10,5 @@ BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/st
 BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/verizon
 
 # Pixel-wide sepolicy
-BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/citadel
 BOARD_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/wifi_sniffer
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
