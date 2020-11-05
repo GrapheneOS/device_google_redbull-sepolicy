@@ -18,9 +18,6 @@
 /dev/logbuffer_wireless                                                               u:object_r:logbuffer_device:s0
 /dev/logbuffer_rtx                                                                    u:object_r:logbuffer_device:s0
 
-# product binaries
-/product/bin/twoshay                                                                  u:object_r:twoshay_exec:s0
-
 # pixelstats binary
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
 
@@ -49,6 +46,7 @@
 /vendor/bin/init\.gadgethal\.sh                                                       u:object_r:init_gadgethal_exec:s0
 /vendor/bin/init\.twoshay\.sh                                                         u:object_r:init_twoshay_exec:s0
 /vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
+/vendor/bin/twoshay                                                                   u:object_r:twoshay_exec:s0
 
 # Vendor firmware
 /vendor/firmware_mnt(/.*)?                                                            u:object_r:firmware_file:s0
