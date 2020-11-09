@@ -4,3 +4,4 @@ type twoshay_exec, exec_type, file_type, system_file_type;
 init_daemon_domain(twoshay)
 
 allow twoshay touch_offload_device:chr_file rw_file_perms;
+allow twoshay twoshay:capability sys_nice;
