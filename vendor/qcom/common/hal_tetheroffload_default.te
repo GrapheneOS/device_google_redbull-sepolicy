@@ -8,3 +8,4 @@ allow hal_tetheroffload_default ipa_dev:chr_file rw_file_perms;
 allow hal_tetheroffload_default ipa_vendor_data_file:dir w_dir_perms;
 allow hal_tetheroffload_default ipa_vendor_data_file:file create_file_perms;
 
+dontaudit hal_tetheroffload_default shell_data_file:dir search;
