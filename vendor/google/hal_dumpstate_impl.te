@@ -38,6 +38,8 @@ userdebug_or_eng(`
 ')
 dontaudit hal_dumpstate_impl debugfs_batteryinfo:dir r_dir_perms;
 dontaudit hal_dumpstate_impl debugfs_batteryinfo:file r_file_perms;
+allow hal_dumpstate_impl sysfs_chargelevel:file r_file_perms;
+allow hal_dumpstate_impl sysfs_batteryinfo:file r_file_perms;
 
 # dump usb files
 allow hal_dumpstate_impl debugfs_usb:file r_file_perms;
