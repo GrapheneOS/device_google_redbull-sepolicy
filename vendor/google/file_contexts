@@ -5,9 +5,11 @@
 /dev/vd6281                                                                           u:object_r:rls_device:s0
 /dev/snd/controlC0                                                                    u:object_r:rls_device:s0
 /dev/sensor_tunnel                                                                    u:object_r:rls_device:s0
+/dev/touch_offload                                                                    u:object_r:touch_offload_device:s0
 /dev/qg                                                                               u:object_r:qg_device:s0
 /dev/qg_battery                                                                       u:object_r:qg_device:s0
 /dev/battery_history                                                                  u:object_r:battery_history_device:s0
+/dev/logbuffer_tcpm                                                                   u:object_r:logbuffer_device:s0
 /dev/logbuffer_usbpd                                                                  u:object_r:logbuffer_device:s0
 /dev/logbuffer_pps                                                                    u:object_r:logbuffer_device:s0
 /dev/logbuffer_ssoc                                                                   u:object_r:logbuffer_device:s0
@@ -15,6 +17,9 @@
 /dev/logbuffer_ttf                                                                    u:object_r:logbuffer_device:s0
 /dev/logbuffer_wireless                                                               u:object_r:logbuffer_device:s0
 /dev/logbuffer_rtx                                                                    u:object_r:logbuffer_device:s0
+
+# product binaries
+/product/bin/twoshay                                                                  u:object_r:twoshay_exec:s0
 
 # pixelstats binary
 /vendor/bin/pixelstats-vendor                                                         u:object_r:pixelstats_vendor_exec:s0
@@ -44,6 +49,7 @@
 /vendor/bin/init\.qti\.chg_policy\.sh                                                 u:object_r:init_qti_chg_policy_exec:s0
 /vendor/bin/init\.modem\.sh                                                           u:object_r:init_modem_exec:s0
 /vendor/bin/init\.gadgethal\.sh                                                       u:object_r:init_gadgethal_exec:s0
+/vendor/bin/init\.twoshay\.sh                                                         u:object_r:init_twoshay_exec:s0
 
 /mnt/vendor/persist/battery(/.*)?                                                     u:object_r:persist_battery_file:s0
 /mnt/vendor/persist/haptics(/.*)?                                                     u:object_r:persist_haptics_file:s0
@@ -57,6 +63,7 @@
 /data/vendor/tcpdump_logger(/.*)?                                                     u:object_r:tcpdump_vendor_data_file:s0
 /data/vendor_ce/[0-9]+/ramoops(/.*)?                                                  u:object_r:ramoops_vendor_data_file:s0
 /data/per_boot(/.*)?                                                                  u:object_r:per_boot_file:s0
+/data/vendor/firmware/wifi(/.*)?                                                      u:object_r:updated_wifi_firmware_data_file:s0
 
 # dev socket node
 /dev/socket/diag_router                                                               u:object_r:diag_socket:s0
