@@ -17,4 +17,5 @@ type vendor_ramdump_prop, property_type;
 type vendor_hvdcp_opti_prop, property_type;
 
 vendor_internal_prop(vendor_adsp_version_prop)
+vendor_internal_prop(vendor_bluetooth_address_prop)
 vendor_public_prop(vendor_telephony_vtcam_prop)

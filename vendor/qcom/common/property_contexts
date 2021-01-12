@@ -24,6 +24,7 @@ persist.vendor.radio                            u:object_r:vendor_radio_prop:s0
 persist.vendor.sys.modem.diag.                  u:object_r:vendor_modem_diag_prop:s0
 
 # vendor_bluetooth_prop
+persist.vendor.service.bdroid.bdaddr            u:object_r:vendor_bluetooth_address_prop:s0
 persist.vendor.bluetooth.a4wp                   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.csoc.cnt               u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.diag_enabled           u:object_r:vendor_bluetooth_prop:s0
