@@ -29,6 +29,7 @@ persist.vendor.service.bdroid.bdaddr            u:object_r:vendor_bluetooth_addr
 persist.vendor.bluetooth.a4wp                   u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.csoc.cnt               u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.bluetooth.diag_enabled           u:object_r:vendor_bluetooth_prop:s0
+persist.vendor.bluetooth.uart_debug             u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.fwsnoop           u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.sibs              u:object_r:vendor_bluetooth_prop:s0
 persist.vendor.service.bdroid.snooplog          u:object_r:vendor_bluetooth_prop:s0
@@ -65,7 +66,7 @@ vendor.debug.ssrdump                            u:object_r:vendor_ssr_prop:s0
 persist.vendor.sys.cnss.                        u:object_r:vendor_cnss_diag_prop:s0
 persist.vendor.sys.crash_rcu                    u:object_r:vendor_ramdump_prop:s0
 persist.vendor.sys.ssr.                         u:object_r:vendor_ssr_prop:s0
-
+vendor.sys.ssr.                                 u:object_r:vendor_ssr_prop:s0
 
 vendor.sys.adsp.firmware.version                u:object_r:vendor_adsp_version_prop:s0
 
