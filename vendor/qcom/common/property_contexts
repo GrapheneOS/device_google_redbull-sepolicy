@@ -66,7 +66,7 @@ vendor.debug.ssrdump                            u:object_r:vendor_ssr_prop:s0
 persist.vendor.sys.cnss.                        u:object_r:vendor_cnss_diag_prop:s0
 persist.vendor.sys.crash_rcu                    u:object_r:vendor_ramdump_prop:s0
 persist.vendor.sys.ssr.                         u:object_r:vendor_ssr_prop:s0
-
+vendor.sys.ssr.                                 u:object_r:vendor_ssr_prop:s0
 
 vendor.sys.adsp.firmware.version                u:object_r:vendor_adsp_version_prop:s0
 
