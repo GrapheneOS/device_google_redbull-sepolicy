@@ -1,0 +1,2 @@
+# b/177780314
+dontaudit hal_power_default hal_power_default:capability dac_read_search ;
