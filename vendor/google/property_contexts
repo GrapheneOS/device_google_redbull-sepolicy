@@ -70,6 +70,3 @@ vendor.sensor.                                  u:object_r:vendor_sensor_prop:s0
 
 # twoshay
 vendor.twoshay.study_group                      u:object_r:vendor_twoshay_prop:s0 exact bool
-
-vendor.all.modules.ready                        u:object_r:vendor_device_prop:s0
-vendor.all.devices.ready                        u:object_r:vendor_device_prop:s0
