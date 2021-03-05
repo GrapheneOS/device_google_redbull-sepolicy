@@ -19,4 +19,5 @@ set_prop(init-insmod-sh, vendor_device_prop)
 
 dontaudit init-insmod-sh debugfs_ipc:dir search;
 dontaudit init-insmod-sh debugfs_wlan:dir search;
+dontaudit init-insmod-sh debugfs_bootreceiver_tracing:dir search;
 dontaudit init-insmod-sh proc_cmdline:file r_file_perms;
