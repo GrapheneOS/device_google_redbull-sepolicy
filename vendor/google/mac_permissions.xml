@@ -30,4 +30,7 @@
     <signer signature="@MDS" >
         <seinfo value="mds" />
     </signer>
+    <signer signature="@EUICCSUPPORTPIXEL" >
+        <seinfo value="EuiccSupportPixel" />
+    </signer>
 </policy>
