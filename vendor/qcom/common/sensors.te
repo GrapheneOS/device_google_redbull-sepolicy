@@ -42,4 +42,4 @@ get_prop(sensors, vendor_modem_diag_prop)
 wakelock_use(sensors)
 
 allow sensors sensors_vendor_data_file:dir rw_dir_perms;
-allow sensors sensors_vendor_data_file:file { create setattr write };
+allow sensors sensors_vendor_data_file:file { create setattr rw_file_perms };
