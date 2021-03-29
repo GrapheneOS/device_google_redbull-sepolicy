@@ -33,3 +33,4 @@ vendor.qti.hardware.display.allocator::IQtiAllocator                    u:object
 vendor.qti.ims.callinfo::IService                                       u:object_r:hal_imscallinfo_hwservice:s0
 vendor.qti.hardware.qseecom::IQSEECom                                   u:object_r:hal_qseecom_hwservice:s0
 vendor.qti.qspmhal::IQspmhal                                            u:object_r:hal_qspmhal_hwservice:s0
+vendor.qti.hardware.dsp::IDspService                                    u:object_r:hal_dspmanager_hwservice:s0
