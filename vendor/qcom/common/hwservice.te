@@ -17,3 +17,4 @@ type hal_qseecom_hwservice, hwservice_manager_type, protected_hwservice, vendor_
 type hal_imsfactory_hwservice, hwservice_manager_type, protected_hwservice, vendor_hwservice_type;
 type hal_qspmhal_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type hal_slmadapter_hwservice, hwservice_manager_type, protected_hwservice;
+type hal_dspmanager_hwservice, hwservice_manager_type, vendor_hwservice_type;
