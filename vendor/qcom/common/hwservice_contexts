@@ -33,3 +33,4 @@ vendor.qti.hardware.qseecom::IQSEECom                                   u:object
 vendor.qti.qspmhal::IQspmhal                                            u:object_r:hal_qspmhal_hwservice:s0
 vendor.qti.hardware.slmadapter::ISlmAdapter                             u:object_r:hal_slmadapter_hwservice:s0
 vendor.qti.hardware.dsp::IDspService                                    u:object_r:hal_dspmanager_hwservice:s0
+vendor.qti.hardware.mwqemadapter::IMwqemAdapter                         u:object_r:hal_mwqemadapter_hwservice:s0
