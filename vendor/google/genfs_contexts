@@ -133,7 +133,8 @@ genfscon sysfs /devices/platform/codec_detect/headset_codec_state      u:object_
 
 
 # Audio Dsp for HardwareInfo
-genfscon sysfs /devices/platform/codec_detect/hwinfo_part_number      u:object_r:sysfs_audio:s0
+genfscon sysfs /devices/platform/codec_detect/hwinfo_part_number            u:object_r:sysfs_audio:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-0/0-0057/i2c_reset      u:object_r:sysfs_audio:s0
 
 # USB
 genfscon debugfs /usb/tcpm-usbpd0                     u:object_r:debugfs_usb:s0
