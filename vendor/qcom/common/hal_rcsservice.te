@@ -7,6 +7,8 @@ net_domain(hal_rcsservice)
 # To register imsrcsd to hwBinder
 hwbinder_use(hal_rcsservice)
 
+allow hal_rcsservice hidl_manager_hwservice:hwservice_manager find;
+
 # add IUceSerive and IService to Hidl interface
 add_hwservice(hal_rcsservice, hal_imsrcsd_hwservice)
 add_hwservice(hal_rcsservice, hal_imscallinfo_hwservice)
