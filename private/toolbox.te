@@ -2,3 +2,5 @@
 dontaudit toolbox toolbox:capability dac_read_search ;
 dontaudit toolbox toolbox:capability dac_override ;
 dontaudit toolbox virtualizationservice_data_file:dir setattr;
+# b/192985881
+dontaudit toolbox toolbox:capability fowner;
