@@ -46,3 +46,8 @@ userdebug_or_eng(`
 
 # For WFC call(RAT change into IWLAN)
 binder_call(cnd, qtidataservices_app)
+
+get_prop(cnd, wifi_hal_prop)
+
+add_hwservice(cnd, hal_slmadapter_hwservice)
+add_hwservice(cnd, hal_mwqemadapter_hwservice)

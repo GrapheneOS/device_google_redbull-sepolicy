@@ -7,8 +7,6 @@ vendor.display.config::IDisplayConfig                                   u:object
 vendor.display.postproc::IDisplayPostproc                               u:object_r:hal_display_postproc_hwservice:s0
 vendor.qti.hardware.display.composer::IQtiComposer                      u:object_r:hal_graphics_composer_hwservice:s0
 vendor.qti.hardware.display.mapper::IQtiMapper                          u:object_r:hal_graphics_mapper_hwservice:s0
-vendor.qti.hardware.bluetooth_sar::IBluetoothSar                        u:object_r:hal_bluetooth_coexistence_hwservice:s0
-vendor.qti.hardware.bt_channel_avoidance::IBTChannelAvoidance           u:object_r:hal_bluetooth_coexistence_hwservice:s0
 vendor.qti.hardware.qteeconnector::IAppConnector                        u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.qteeconnector::IGPAppConnector                      u:object_r:hal_qteeconnector_hwservice:s0
 vendor.qti.hardware.radio.am::IQcRilAudio                               u:object_r:hal_telephony_hwservice:s0
@@ -33,4 +31,6 @@ vendor.qti.hardware.display.allocator::IQtiAllocator                    u:object
 vendor.qti.ims.callinfo::IService                                       u:object_r:hal_imscallinfo_hwservice:s0
 vendor.qti.hardware.qseecom::IQSEECom                                   u:object_r:hal_qseecom_hwservice:s0
 vendor.qti.qspmhal::IQspmhal                                            u:object_r:hal_qspmhal_hwservice:s0
+vendor.qti.hardware.slmadapter::ISlmAdapter                             u:object_r:hal_slmadapter_hwservice:s0
 vendor.qti.hardware.dsp::IDspService                                    u:object_r:hal_dspmanager_hwservice:s0
+vendor.qti.hardware.mwqemadapter::IMwqemAdapter                         u:object_r:hal_mwqemadapter_hwservice:s0
