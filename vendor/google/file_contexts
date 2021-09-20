@@ -46,6 +46,7 @@
 /vendor/bin/init\.twoshay\.sh                                                         u:object_r:init_twoshay_exec:s0
 /vendor/bin/init\.insmod\.sh                                                          u:object_r:init-insmod-sh_exec:s0
 /vendor/bin/twoshay                                                                   u:object_r:twoshay_exec:s0
+/vendor/bin/hw/android\.hardware\.contexthub-service\.generic                         u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/android\.hardware\.contexthub@1\.[0-9]-service\.generic                u:object_r:hal_contexthub_default_exec:s0
 /vendor/bin/hw/vendor\.google\.wireless_charger@1\.[0-9]-service-vendor               u:object_r:hal_wlc_exec:s0
 
