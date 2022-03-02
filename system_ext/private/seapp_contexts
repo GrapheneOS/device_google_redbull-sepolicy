@@ -1,9 +1,3 @@
-# Use a custom domain for GoogleCamera, to allow for Hexagon DSP access
-user=_app seinfo=google name=com.google.android.GoogleCamera domain=google_camera_app type=app_data_file levelFrom=all
-
-# Also allow GoogleCameraNext, the dogfood beta version, the same access as GoogleCamera
-user=_app seinfo=googlepulse name=com.google.android.apps.googlecamera.fishfood domain=google_camera_app type=app_data_file levelFrom=all
-
 # Domain for DeviceDropMonitor service
 user=_app seinfo=platform name=com.google.android.devicedropmonitor domain=device_drop_monitor type=app_data_file levelFrom=all
 
