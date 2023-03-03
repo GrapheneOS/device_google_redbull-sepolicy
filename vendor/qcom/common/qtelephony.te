@@ -26,3 +26,6 @@ set_prop(qtelephony, vendor_qcom_ims_prop)
 userdebug_or_eng(`
     allow qtelephony diag_device:chr_file rw_file_perms;
 ')
+
+# b/265255811#comment26 Ignore access AIDL as we freezed target for HIDL
+dontaudit qtelephony default_android_service:service_manager { find };
