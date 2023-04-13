@@ -7,3 +7,4 @@ vendor.qti.hardware.radio.qcrilhook.IQtiOemHook/oemhook0  u:object_r:radio_servi
 vendor.qti.hardware.radio.qcrilhook.IQtiOemHook/oemhook1  u:object_r:radio_service:s0
 
 vendor.qti.hardware.radio.atcmdfwd.IAtCmdFwd/AtCmdFwdAidl u:object_r:radio_service:s0
+vendor.qti.hardware.radio.atfwd.IAtFwd/AtFwdAidl          u:object_r:radio_service:s0
