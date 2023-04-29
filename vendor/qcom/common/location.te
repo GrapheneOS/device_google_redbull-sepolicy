@@ -14,7 +14,6 @@ hwbinder_use(location)
 net_domain(location)
 
 r_dir_file(location, sysfs_msm_subsys)
-r_dir_file(location, sysfs_soc)
 r_dir_file(location, sysfs_ssr)
 
 allow location hal_gnss_qti:unix_dgram_socket sendto;
