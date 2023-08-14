@@ -62,3 +62,4 @@ type debugfs_icnss, debugfs_type, fs_type;
 type debugfs_ion, debugfs_type, fs_type;
 type debugfs_tzdbg, debugfs_type, fs_type;
 type cnss_vendor_data_file, file_type, data_file_type, mlstrustedobject;
+type sscoredump_vendor_data_coredump_file, file_type, data_file_type, mlstrustedobject;
