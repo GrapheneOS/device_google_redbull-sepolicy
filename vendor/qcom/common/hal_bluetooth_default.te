@@ -4,8 +4,10 @@ allow hal_bluetooth_default hal_bluetooth_coexistence_hwservice:hwservice_manage
 
 userdebug_or_eng(`
   allow hal_bluetooth_default diag_device:chr_file rw_file_perms;
-  allow hal_bluetooth_default ramdump_vendor_data_file:dir rw_dir_perms;
-  allow hal_bluetooth_default ramdump_vendor_data_file:file { create rw_file_perms };
+  allow hal_bluetooth_default ramdump_vendor_data_file:dir create_dir_perms;
+  allow hal_bluetooth_default ramdump_vendor_data_file:file create_file_perms;
+  allow hal_bluetooth_default sscoredump_vendor_data_coredump_file:dir create_dir_perms;
+  allow hal_bluetooth_default sscoredump_vendor_data_coredump_file:file create_file_perms;
   r_dir_file(hal_bluetooth_default, debugfs_ipc)
   set_prop(hal_bluetooth_default, vendor_ssr_prop)
 ')
