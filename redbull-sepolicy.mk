@@ -10,6 +10,7 @@ BOARD_SEPOLICY_DIRS += device/google/redbull-sepolicy/vendor/st
 
 # Pixel-wide sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/powerstats
+BOARD_VENDOR_SEPOLICY_DIRS += hardware/google/pixel-sepolicy/googlebattery
 
 # system_ext
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/google/redbull-sepolicy/system_ext/private
